@@ -1,9 +1,15 @@
 <!doctype html>
-<html lang="pt-PT" class="scheme-dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Daniel Lopes — Design Prototype</title><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.0">
+<html lang="pt-PT" class="scheme-dark">
 
-</script>
-<style type="text/tailwindcss">
-/* Apenas tokens do Tailwind; nenhum seletor CSS personalizado. */
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel Lopes — Design Prototype</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.0">
+
+  </script>
+  <style type="text/tailwindcss">
+    /* Apenas tokens do Tailwind; nenhum seletor CSS personalizado. */
 @theme {
   --font-sans: Inter, Arial, sans-serif;
   --color-site-bg: light-dark(#f6f5fa, #101114);
@@ -25,264 +31,600 @@
 }
 
 </style>
-</head><body class="m-0 bg-[#0c0d11] p-6 max-[400px]:p-3"><div data-portfolio="" class="mx-auto max-w-[1440px] overflow-clip rounded-[18px] bg-site-bg font-sans leading-[1.55] text-site-ink scheme-dark max-[581px]:rounded-[10px]">
+</head>
 
-<header class="flex flex-wrap items-center justify-between gap-[18px] border-b border-site-border px-[5%] py-[22px] max-[581px]:gap-3 max-[581px]:px-[6%] max-[581px]:py-4">
- <button class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 whitespace-nowrap border-0 p-0 text-xl font-bold tracking-[-1px] bg-transparent" data-home aria-label="Daniel Lopes, início"><span class="text-site-accent">Daniel </span>{dev}</button>
- <button class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 hidden rounded-md border border-site-border bg-transparent px-3 py-2 text-xs max-[581px]:block" aria-expanded="false" data-menu-toggle="">Menu</button>
- <nav class="hidden flex-wrap items-center gap-[22px] text-xs data-[open=true]:flex min-[581px]:flex min-[581px]:max-[761px]:gap-3 max-[581px]:w-full max-[581px]:justify-between max-[581px]:gap-2" aria-label="Navegação principal" data-links="">
-  <button data-section="dl-about-section" class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 border-0 bg-transparent py-2 motion-safe:transition-colors motion-safe:duration-180 motion-safe:hover:text-site-accent max-[581px]:p-2.5 min-[581px]:max-[761px]:text-[11px] max-[581px]:text-xs">Sobre</button><button data-section="dl-work-section" class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 border-0 bg-transparent py-2 motion-safe:transition-colors motion-safe:duration-180 motion-safe:hover:text-site-accent max-[581px]:p-2.5 min-[581px]:max-[761px]:text-[11px] max-[581px]:text-xs">Projetos</button><button data-section="dl-experience-section" class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 border-0 bg-transparent py-2 motion-safe:transition-colors motion-safe:duration-180 motion-safe:hover:text-site-accent max-[581px]:p-2.5 min-[581px]:max-[761px]:text-[11px] max-[581px]:text-xs">Percurso</button>
-  <button class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 rounded-lg border border-site-border px-[13px] py-[9px] data-[selected=true]:text-site-accent min-[581px]:max-[761px]:text-[11px] max-[581px]:text-xs" data-library data-library-navigation="">Componentes ↗</button><button data-section="dl-contact-section" class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 border-0 bg-transparent py-2 motion-safe:transition-colors motion-safe:duration-180 motion-safe:hover:text-site-accent max-[581px]:p-2.5 min-[581px]:max-[761px]:text-[11px] max-[581px]:text-xs">Contacto</button><button class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 rounded-md border border-site-border px-2.5 py-1.5 text-[11px] min-[581px]:max-[761px]:text-[11px] max-[581px]:text-xs" aria-label="Alternar tema" data-theme-toggle="">◐ Tema</button>
- </nav>
-</header>
-<div data-home-view="">
- <section class="relative isolate grid items-center gap-[26px] px-[6%] pt-9 pb-[30px] bg-[radial-gradient(ellipse_at_90%_65%,var(--color-site-glow),transparent_55%)] min-[581px]:grid-cols-[1.2fr_1fr] min-[581px]:gap-[30px] min-[581px]:px-[5%] min-[581px]:pt-[66px] min-[581px]:pb-12 min-[581px]:bg-[radial-gradient(ellipse_at_80%_16%,var(--color-site-glow),transparent_53%),radial-gradient(ellipse_at_20%_100%,var(--color-site-soft),transparent_55%)] min-[581px]:max-[761px]:gap-3 min-[581px]:max-[761px]:pt-[42px]">
-  <div class="relative z-1">
-   <div class="mb-5 inline-flex items-center gap-2 rounded-[30px] border border-site-border bg-site-panel px-3 py-1.5 text-[11px]"><span class="size-1.5 rounded-full bg-site-accent"></span>Disponível para novos desafios</div>
-   <div class="font-mono text-[11px] tracking-[1.6px] text-site-muted uppercase mb-[14px]">Daniel Lopes / Frontend Developer</div>
-   <h1 class="mb-[22px] text-[49px] font-semibold leading-[1.02] tracking-[-2.4px] min-[581px]:text-[clamp(42px,5.6vw,68px)] min-[581px]:tracking-[-3px] min-[581px]:max-[761px]:text-[46px] max-[400px]:text-[42px]">Ideias claras.<br>Interfaces<br><em class="bg-linear-115 from-site-accent from-12% to-site-title-end to-95% bg-clip-text text-transparent not-italic">com impacto.</em></h1>
-   <p class="m-0 text-[13px] text-site-muted max-w-[360px]">Transformo desafios complexos em experiências simples. Mais de 4 anos a criar produtos digitais com React, Svelte e TypeScript.</p>
-   <div class="mt-[26px] flex flex-wrap gap-3"><button class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 inline-flex items-center justify-center gap-2.5 rounded-lg border px-[18px] py-[11px] text-xs font-medium motion-safe:transition-[transform,background-color] motion-safe:duration-180 motion-safe:hover:-translate-y-0.5 border-site-fill bg-site-fill text-site-on shadow-[0_5px_20px_#9b8aff16]" data-section="dl-work-section">Explorar trabalho <span>↗</span></button><button class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 inline-flex items-center justify-center gap-2.5 rounded-lg border border-site-border bg-transparent px-[18px] py-[11px] text-xs font-medium motion-safe:transition-[transform,background-color] motion-safe:duration-180 motion-safe:hover:-translate-y-0.5" data-library>Experimentar componentes</button></div>
-   <div class="mt-[25px] text-[11px] text-site-muted">Viseu, Portugal · Remoto & relocalização</div>
-  </div>
-  <div class="relative z-1 min-w-0 rounded-[18px] px-4 pt-10 pb-4 perspective-[1100px] bg-[radial-gradient(ellipse_at_52%_45%,var(--color-site-halo),transparent_70%)] max-[581px]:px-2 max-[581px]:pt-[18px] before:pointer-events-none before:absolute before:inset-x-[-10%] before:top-[28%] before:bottom-0 before:-z-1 before:origin-bottom before:bg-[linear-gradient(var(--color-site-grid)_1px,transparent_1px),linear-gradient(90deg,var(--color-site-grid)_1px,transparent_1px)] before:bg-size-[30px_30px] before:[transform:perspective(500px)_rotateX(58deg)] before:mask-[linear-gradient(transparent,black_45%,transparent)] before:content-[&#x27;&#x27;] motion-reduce:before:hidden" data-art="">
-   <div class="relative overflow-hidden rounded-xl border border-site-border bg-site-panel transform-3d shadow-[12px_20px_0_-6px_var(--color-site-soft),0_35px_70px_#0004] -rotate-z-1 min-[581px]:[--dl-rx:5deg] min-[581px]:[--dl-ry:-9deg] min-[581px]:rotate-x-(--dl-rx) min-[581px]:rotate-y-(--dl-ry) min-[581px]:-rotate-z-2 motion-safe:transition-transform motion-safe:duration-320 motion-safe:ease-out min-[581px]:motion-safe:focus-within:rotate-x-0 min-[581px]:motion-safe:focus-within:rotate-y-0 motion-safe:focus-within:rotate-z-0 motion-reduce:transform-none min-[581px]:motion-reduce:transform-none" data-browser=""><div class="flex items-center gap-[5px] border-b border-site-border p-3 text-[10px] text-site-muted"><b class="size-[5px] rounded-full bg-site-muted opacity-50"></b><b class="size-[5px] rounded-full bg-site-muted opacity-50"></b><b class="size-[5px] rounded-full bg-site-muted opacity-50"></b><span class="ml-3 font-mono">daniel.dev / playground</span></div><div class="p-[22px] min-[581px]:max-[761px]:p-[14px] max-[581px]:p-[18px]">
-    <div class="mb-4 flex items-center justify-between gap-2 text-[11px] text-site-muted"><strong class="font-medium text-site-ink">Pequenas peças. Grandes possibilidades.</strong><span>↗</span></div>
-    <div class="grid grid-cols-2 gap-3 max-[400px]:grid-cols-1 min-[581px]:max-[761px]:grid-cols-1 min-[581px]:max-[761px]:gap-1.5">
-     <div class="min-w-0 rounded-[9px] border border-site-border bg-site-bg px-3 py-4 min-[581px]:max-[761px]:px-[7px] min-[581px]:max-[761px]:py-3"><button class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 inline-flex items-center justify-center gap-2.5 rounded-lg border font-medium motion-safe:transition-[transform,background-color] motion-safe:duration-180 motion-safe:hover:-translate-y-0.5 border-site-fill bg-site-fill text-site-on shadow-[0_5px_20px_#9b8aff16] w-full p-[9px] text-[11px] min-[581px]:max-[761px]:text-[10px] max-[400px]:text-[10px]" data-hero-demo>Experimenta-me ↗</button><div class="mt-2.5 rounded-md border border-site-border bg-site-panel p-[9px] text-[10px] truncate text-site-muted">⌕ &nbsp; Encontrar uma ideia...</div></div>
-     <div class="min-w-0 rounded-[9px] border border-site-border bg-site-bg px-3 py-4 min-[581px]:max-[761px]:px-[7px] min-[581px]:max-[761px]:py-3"><div class="mb-3 flex items-center gap-2 text-[11px]"><span class="shrink-0 rounded-full bg-site-fill p-2 text-[11px] font-semibold text-site-on">DL</span><span>Daniel Lopes<small class="block text-[10px] text-site-muted">Frontend Developer</small></span></div><div class="flex flex-wrap gap-1.5"><span class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">React</span><span class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">TypeScript</span></div></div>
-     <div class="min-w-0 rounded-[9px] border border-site-border bg-site-bg px-3 py-4 min-[581px]:max-[761px]:px-[7px] min-[581px]:max-[761px]:py-3"><label class="flex items-center gap-2 text-[11px] whitespace-nowrap"><input type="checkbox" checked class="size-4 accent-site-fill">Modo criativo</label><div class="my-[9px] h-[7px] rounded-[3px] w-[65%] bg-site-fill mt-[18px]"></div><div class="my-[9px] h-[7px] rounded-[3px] bg-site-border w-[85%]"></div></div>
-     <div class="min-w-0 rounded-[9px] border border-site-border bg-site-bg px-3 py-4 min-[581px]:max-[761px]:px-[7px] min-[581px]:max-[761px]:py-3"><div class="font-mono tracking-[1.6px] text-site-muted uppercase text-[10px] tracking-normal">Uma boa interface é...</div><div class="mt-[5px] text-[23px] tracking-[-1px]">Intuitiva<span class="text-site-accent">.</span></div></div>
+<body class="m-0 bg-[#0c0d11] p-6 max-[400px]:p-3">
+  <div data-portfolio=""
+    class="mx-auto max-w-[1440px] overflow-clip rounded-[18px] bg-site-bg font-sans leading-[1.55] text-site-ink scheme-dark max-[581px]:rounded-[10px]">
+
+    <header
+      class="flex flex-wrap items-center justify-between gap-[18px] border-b border-site-border px-[5%] py-[22px] max-[581px]:gap-3 max-[581px]:px-[6%] max-[581px]:py-4">
+      <button
+        class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 whitespace-nowrap border-0 p-0 text-xl font-bold tracking-[-1px] bg-transparent"
+        data-home aria-label="Daniel Lopes, início"><span class="text-site-accent">Daniel </span>{dev}</button>
+      <button
+        class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 hidden rounded-md border border-site-border bg-transparent px-3 py-2 text-xs max-[581px]:block"
+        aria-expanded="false" data-menu-toggle="">Menu</button>
+      <nav
+        class="hidden flex-wrap items-center gap-[22px] text-xs data-[open=true]:flex min-[581px]:flex min-[581px]:max-[761px]:gap-3 max-[581px]:w-full max-[581px]:justify-between max-[581px]:gap-2"
+        aria-label="Navegação principal" data-links="">
+        <button data-section="dl-about-section"
+          class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 border-0 bg-transparent py-2 motion-safe:transition-colors motion-safe:duration-180 motion-safe:hover:text-site-accent max-[581px]:p-2.5 min-[581px]:max-[761px]:text-[11px] max-[581px]:text-xs">Sobre</button><button
+          data-section="dl-work-section"
+          class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 border-0 bg-transparent py-2 motion-safe:transition-colors motion-safe:duration-180 motion-safe:hover:text-site-accent max-[581px]:p-2.5 min-[581px]:max-[761px]:text-[11px] max-[581px]:text-xs">Projetos</button><button
+          data-section="dl-experience-section"
+          class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 border-0 bg-transparent py-2 motion-safe:transition-colors motion-safe:duration-180 motion-safe:hover:text-site-accent max-[581px]:p-2.5 min-[581px]:max-[761px]:text-[11px] max-[581px]:text-xs">Percurso</button>
+        <button
+          class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 rounded-lg border border-site-border px-[13px] py-[9px] data-[selected=true]:text-site-accent min-[581px]:max-[761px]:text-[11px] max-[581px]:text-xs"
+          data-library data-library-navigation="">Componentes ↗</button><button data-section="dl-contact-section"
+          class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 border-0 bg-transparent py-2 motion-safe:transition-colors motion-safe:duration-180 motion-safe:hover:text-site-accent max-[581px]:p-2.5 min-[581px]:max-[761px]:text-[11px] max-[581px]:text-xs">Contacto</button><button
+          class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 rounded-md border border-site-border px-2.5 py-1.5 text-[11px] min-[581px]:max-[761px]:text-[11px] max-[581px]:text-xs"
+          aria-label="Alternar tema" data-theme-toggle="">◐ Tema</button>
+      </nav>
+    </header>
+    <div data-home-view="">
+      <section
+        class="relative isolate grid items-center gap-[26px] px-[6%] pt-9 pb-[30px] bg-[radial-gradient(ellipse_at_90%_65%,var(--color-site-glow),transparent_55%)] min-[581px]:grid-cols-[1.2fr_1fr] min-[581px]:gap-[30px] min-[581px]:px-[5%] min-[581px]:pt-[66px] min-[581px]:pb-12 min-[581px]:bg-[radial-gradient(ellipse_at_80%_16%,var(--color-site-glow),transparent_53%),radial-gradient(ellipse_at_20%_100%,var(--color-site-soft),transparent_55%)] min-[581px]:max-[761px]:gap-3 min-[581px]:max-[761px]:pt-[42px]">
+        <div class="relative z-1">
+          <div
+            class="mb-5 inline-flex items-center gap-2 rounded-[30px] border border-site-border bg-site-panel px-3 py-1.5 text-[11px]">
+            <span class="size-1.5 rounded-full bg-site-accent"></span>Disponível para novos desafios
+          </div>
+          <div class="font-mono text-[11px] tracking-[1.6px] text-site-muted uppercase mb-[14px]">Daniel Lopes /
+            Frontend Developer</div>
+          <h1
+            class="mb-[22px] text-[49px] font-semibold leading-[1.02] tracking-[-2.4px] min-[581px]:text-[clamp(42px,5.6vw,68px)] min-[581px]:tracking-[-3px] min-[581px]:max-[761px]:text-[46px] max-[400px]:text-[42px]">
+            Ideias claras.<br>Interfaces<br><em
+              class="bg-linear-115 from-site-accent from-12% to-site-title-end to-95% bg-clip-text text-transparent not-italic">com
+              impacto.</em></h1>
+          <p class="m-0 text-[13px] text-site-muted max-w-[360px]">Transformo desafios complexos em experiências
+            simples. Mais de 4 anos a criar produtos digitais com React, Svelte e TypeScript.</p>
+          <div class="mt-[26px] flex flex-wrap gap-3"><button
+              class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 inline-flex items-center justify-center gap-2.5 rounded-lg border px-[18px] py-[11px] text-xs font-medium motion-safe:transition-[transform,background-color] motion-safe:duration-180 motion-safe:hover:-translate-y-0.5 border-site-fill bg-site-fill text-site-on shadow-[0_5px_20px_#9b8aff16]"
+              data-section="dl-work-section">Explorar trabalho <span>↗</span></button><button
+              class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 inline-flex items-center justify-center gap-2.5 rounded-lg border border-site-border bg-transparent px-[18px] py-[11px] text-xs font-medium motion-safe:transition-[transform,background-color] motion-safe:duration-180 motion-safe:hover:-translate-y-0.5"
+              data-library>Experimentar componentes</button></div>
+          <div class="mt-[25px] text-[11px] text-site-muted">Viseu, Portugal · Remoto & relocalização</div>
+        </div>
+        <div
+          class="relative z-1 min-w-0 rounded-[18px] px-4 pt-10 pb-4 perspective-[1100px] bg-[radial-gradient(ellipse_at_52%_45%,var(--color-site-halo),transparent_70%)] max-[581px]:px-2 max-[581px]:pt-[18px] before:pointer-events-none before:absolute before:inset-x-[-10%] before:top-[28%] before:bottom-0 before:-z-1 before:origin-bottom before:bg-[linear-gradient(var(--color-site-grid)_1px,transparent_1px),linear-gradient(90deg,var(--color-site-grid)_1px,transparent_1px)] before:bg-size-[30px_30px] before:[transform:perspective(500px)_rotateX(58deg)] before:mask-[linear-gradient(transparent,black_45%,transparent)] before:content-[&#x27;&#x27;] motion-reduce:before:hidden"
+          data-art="">
+          <div
+            class="relative overflow-hidden rounded-xl border border-site-border bg-site-panel transform-3d shadow-[12px_20px_0_-6px_var(--color-site-soft),0_35px_70px_#0004] -rotate-z-1 min-[581px]:[--dl-rx:5deg] min-[581px]:[--dl-ry:-9deg] min-[581px]:rotate-x-(--dl-rx) min-[581px]:rotate-y-(--dl-ry) min-[581px]:-rotate-z-2 motion-safe:transition-transform motion-safe:duration-320 motion-safe:ease-out min-[581px]:motion-safe:focus-within:rotate-x-0 min-[581px]:motion-safe:focus-within:rotate-y-0 motion-safe:focus-within:rotate-z-0 motion-reduce:transform-none min-[581px]:motion-reduce:transform-none"
+            data-browser="">
+            <div class="flex items-center gap-[5px] border-b border-site-border p-3 text-[10px] text-site-muted"><b
+                class="size-[5px] rounded-full bg-site-muted opacity-50"></b><b
+                class="size-[5px] rounded-full bg-site-muted opacity-50"></b><b
+                class="size-[5px] rounded-full bg-site-muted opacity-50"></b><span class="ml-3 font-mono">daniel.dev /
+                playground</span></div>
+            <div class="p-[22px] min-[581px]:max-[761px]:p-[14px] max-[581px]:p-[18px]">
+              <div class="mb-4 flex items-center justify-between gap-2 text-[11px] text-site-muted"><strong
+                  class="font-medium text-site-ink">Pequenas peças. Grandes possibilidades.</strong><span>↗</span></div>
+              <div
+                class="grid grid-cols-2 gap-3 max-[400px]:grid-cols-1 min-[581px]:max-[761px]:grid-cols-1 min-[581px]:max-[761px]:gap-1.5">
+                <div
+                  class="min-w-0 rounded-[9px] border border-site-border bg-site-bg px-3 py-4 min-[581px]:max-[761px]:px-[7px] min-[581px]:max-[761px]:py-3">
+                  <button
+                    class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 inline-flex items-center justify-center gap-2.5 rounded-lg border font-medium motion-safe:transition-[transform,background-color] motion-safe:duration-180 motion-safe:hover:-translate-y-0.5 border-site-fill bg-site-fill text-site-on shadow-[0_5px_20px_#9b8aff16] w-full p-[9px] text-[11px] min-[581px]:max-[761px]:text-[10px] max-[400px]:text-[10px]"
+                    data-hero-demo>Experimenta-me ↗</button>
+                  <div
+                    class="mt-2.5 rounded-md border border-site-border bg-site-panel p-[9px] text-[10px] truncate text-site-muted">
+                    ⌕ &nbsp; Encontrar uma ideia...</div>
+                </div>
+                <div
+                  class="min-w-0 rounded-[9px] border border-site-border bg-site-bg px-3 py-4 min-[581px]:max-[761px]:px-[7px] min-[581px]:max-[761px]:py-3">
+                  <div class="mb-3 flex items-center gap-2 text-[11px]"><span
+                      class="shrink-0 rounded-full bg-site-fill p-2 text-[11px] font-semibold text-site-on">DL</span><span>Daniel
+                      Lopes<small class="block text-[10px] text-site-muted">Frontend Developer</small></span></div>
+                  <div class="flex flex-wrap gap-1.5"><span
+                      class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">React</span><span
+                      class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">TypeScript</span>
+                  </div>
+                </div>
+                <div
+                  class="min-w-0 rounded-[9px] border border-site-border bg-site-bg px-3 py-4 min-[581px]:max-[761px]:px-[7px] min-[581px]:max-[761px]:py-3">
+                  <label class="flex items-center gap-2 text-[11px] whitespace-nowrap"><input type="checkbox" checked
+                      class="size-4 accent-site-fill">Modo criativo</label>
+                  <div class="my-[9px] h-[7px] rounded-[3px] w-[65%] bg-site-fill mt-[18px]"></div>
+                  <div class="my-[9px] h-[7px] rounded-[3px] bg-site-border w-[85%]"></div>
+                </div>
+                <div
+                  class="min-w-0 rounded-[9px] border border-site-border bg-site-bg px-3 py-4 min-[581px]:max-[761px]:px-[7px] min-[581px]:max-[761px]:py-3">
+                  <div class="font-mono tracking-[1.6px] text-site-muted uppercase text-[10px] tracking-normal">Uma boa
+                    interface é...</div>
+                  <div class="mt-[5px] text-[23px] tracking-[-1px]">Intuitiva<span class="text-site-accent">.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative mt-[17px] ml-auto w-max max-w-full rounded-[9px] bg-linear-115 from-site-fill to-site-title-end px-[18px] py-[15px] font-mono text-[11px] text-site-on shadow-[0_12px_30px_#0003] translate-z-[30px] rotate-3 min-[581px]:max-[761px]:text-[10px] motion-reduce:translate-none motion-reduce:rotate-none">
+            &lt;Button variant="primary" /&gt;</div>
+          <div class="mt-5 flex justify-between gap-3 font-mono text-[10px] text-site-muted"><span>DESIGN → CODE →
+              EXPERIENCE</span><span>Feito para explorar.</span></div>
+          <div class="mt-3 min-h-[18px] text-[11px] text-site-accent" data-hero-status aria-live="polite"></div>
+        </div>
+      </section>
+      <div class="flex flex-wrap items-center justify-between gap-[15px] border-y border-site-border px-[5%] py-5">
+        <div class="font-mono text-[11px] tracking-[1.6px] text-site-muted uppercase">A minha caixa de ferramentas</div>
+        <span class="text-[13px] font-medium">React</span><span class="text-[13px] font-medium">TypeScript</span><span
+          class="text-[13px] font-medium">Svelte</span><span class="text-[13px] font-medium">Angular</span><span
+          class="text-[13px] font-medium">Ruby on Rails</span>
+      </div>
+      <section class="px-[5%] py-[54px] max-[581px]:px-[6%] max-[581px]:py-9" data-scroll-target="dl-work-section">
+        <div class="mb-[25px] flex items-end justify-between gap-[18px] max-[581px]:flex-col max-[581px]:items-start">
+          <div>
+            <div class="font-mono text-[11px] tracking-[1.6px] text-site-muted uppercase">01 / Trabalho em destaque
+            </div>
+            <h2 class="mt-2.5 text-[32px] font-medium leading-[1.1] tracking-[-1.1px] max-[581px]:text-[28px]">Da
+              complexidade à clareza.</h2>
+          </div><span class="font-mono text-[11px] tracking-[1.6px] text-site-muted uppercase tracking-normal">Seleção
+            visual · exemplos de apresentação</span>
+        </div>
+        <div class="grid grid-cols-2 gap-[18px] max-[581px]:grid-cols-1">
+          <article
+            class="group relative overflow-hidden rounded-xl border border-site-border bg-site-panel motion-safe:transition-[transform,border-color,box-shadow] motion-safe:duration-240 motion-safe:hover:-translate-y-[5px] motion-safe:hover:border-site-accent motion-safe:hover:shadow-[0_20px_40px_#0002]">
+            <div class="flex h-[190px] items-center justify-center bg-linear-135 from-site-soft to-site-glow p-6">
+              <div
+                class="flex h-[140px] w-full overflow-hidden rounded-lg border border-site-border bg-site-panel shadow-[0_18px_30px_#0003] [transform:perspective(800px)_rotateX(8deg)_rotateY(-7deg)_rotateZ(-2deg)] motion-safe:transition-transform motion-safe:duration-350 motion-safe:group-hover:[transform:perspective(800px)_rotateX(0deg)_rotateY(0deg)_rotateZ(0deg)] motion-reduce:transform-none">
+                <div class="w-1/4 shrink-0 border-r border-site-border p-3 text-[9px] leading-[2.5] text-site-muted">●
+                  Workspace<br>Visão geral<br>Calendário<br>Equipa</div>
+                <div class="min-w-0 flex-1 p-4"><span class="text-[11px]">Agenda de instalações</span>
+                  <div class="my-[9px] h-[7px] rounded-[3px] w-[65%] bg-site-fill"></div>
+                  <div class="mt-3 grid grid-cols-5 gap-[3px]"><span
+                      class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span><span
+                      class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span><span
+                      class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span><span
+                      class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span><span
+                      class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span><span
+                      class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span><span
+                      class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span><span
+                      class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span><span
+                      class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span><span
+                      class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="p-[22px]">
+              <div class="font-mono tracking-[1.6px] text-site-muted uppercase mb-[9px] text-[10px] tracking-[1px]">Web
+                application / interfaces operacionais</div>
+              <h3 class="mb-[9px] text-lg font-medium tracking-[-.5px]">Medições & instalações</h3>
+              <p class="m-0 text-[13px] text-site-muted mb-[15px]">Formulários dinâmicos, agendamento e mapas numa
+                experiência de trabalho coesa.</p>
+              <div class="flex flex-wrap gap-1.5"><span
+                  class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">SvelteKit</span><span
+                  class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">Rails</span><span
+                  class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">Google
+                  Maps</span></div>
+            </div>
+          </article>
+          <article
+            class="group relative overflow-hidden rounded-xl border border-site-border bg-site-panel motion-safe:transition-[transform,border-color,box-shadow] motion-safe:duration-240 motion-safe:hover:-translate-y-[5px] motion-safe:hover:border-site-accent motion-safe:hover:shadow-[0_20px_40px_#0002]">
+            <div
+              class="flex h-[190px] items-center justify-center bg-linear-135 from-site-soft to-site-glow p-6 from-site-ink-blue to-site-soft">
+              <div
+                class="flex h-[140px] w-full overflow-hidden rounded-lg border border-site-border bg-site-panel shadow-[0_18px_30px_#0003] [transform:perspective(800px)_rotateX(8deg)_rotateY(-7deg)_rotateZ(-2deg)] motion-safe:transition-transform motion-safe:duration-350 motion-safe:group-hover:[transform:perspective(800px)_rotateX(0deg)_rotateY(0deg)_rotateZ(0deg)] motion-reduce:transform-none">
+                <div class="w-1/4 shrink-0 border-r border-site-border p-3 text-[9px] leading-[2.5] text-site-muted">●
+                  Components<br>Button<br>Input<br>Card</div>
+                <div class="min-w-0 flex-1 p-4"><span class="text-[11px]">Build something good.</span>
+                  <div class="my-[9px] h-[7px] rounded-[3px] bg-site-border w-3/4"></div>
+                  <div class="flex flex-wrap gap-1.5 mt-5"><span
+                      class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] bg-site-fill text-site-on">Primary
+                      ↗</span><span
+                      class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">Secondary</span>
+                  </div>
+                  <div class="my-[9px] h-[7px] rounded-[3px] bg-site-border mt-[19px] w-[90%]"></div>
+                </div>
+              </div>
+            </div>
+            <div class="p-[22px]">
+              <div class="font-mono tracking-[1.6px] text-site-muted uppercase mb-[9px] text-[10px] tracking-[1px]">Em
+                desenvolvimento / biblioteca pessoal</div>
+              <h3 class="mb-[9px] text-lg font-medium tracking-[-.5px]">Interfaces, peça a peça</h3>
+              <p class="m-0 text-[13px] text-site-muted mb-[15px]">Um espaço para construir, documentar e experimentar
+                os meus componentes React.</p><button
+                class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 inline-flex items-center justify-center gap-2.5 rounded-lg border border-site-border bg-transparent text-xs font-medium motion-safe:transition-[transform,background-color] motion-safe:duration-180 motion-safe:hover:-translate-y-0.5 px-3 py-[7px]"
+                data-library>Abrir biblioteca ↗</button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section
+        class="px-[5%] py-[54px] max-[581px]:px-[6%] max-[581px]:py-9 grid grid-cols-[.75fr_1.25fr] gap-[55px] border-t border-site-border max-[761px]:gap-[25px] max-[581px]:grid-cols-1"
+        data-scroll-target="dl-about-section">
+        <div>
+          <div class="font-mono text-[11px] tracking-[1.6px] text-site-muted uppercase">02 / Um pouco sobre mim</div>
+          <h2 class="mt-2.5 text-[32px] font-medium leading-[1.1] tracking-[-1.1px] max-[581px]:text-[28px]">O detalhe
+            importa.<br>A experiência também.</h2>
+        </div>
+        <div>
+          <p class="m-0 text-site-muted text-[15px] leading-[1.8]">Sou o Daniel, developer com formação em Tecnologia e
+            Design de Multimédia. Gosto de ligar o lado visual à lógica que faz um produto funcionar.</p>
+          <p class="m-0 text-site-muted mt-[14px] text-[15px] leading-[1.8]">Trabalho sobretudo em frontend, com
+            experiência full stack. De formulários e dashboards a calendários e mapas, procuro criar interfaces claras,
+            reutilizáveis e fáceis de manter.</p>
+          <div class="flex flex-wrap gap-1.5 mt-5"><span
+              class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">Português ·
+              nativo</span><span
+              class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">Inglês</span><span
+              class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">Espanhol</span>
+          </div>
+        </div>
+      </section>
+      <section class="px-[5%] py-[54px] max-[581px]:px-[6%] max-[581px]:py-9 border-t border-site-border"
+        data-scroll-target="dl-experience-section">
+        <div class="mb-[25px] flex items-end justify-between gap-[18px] max-[581px]:flex-col max-[581px]:items-start">
+          <div>
+            <div class="font-mono text-[11px] tracking-[1.6px] text-site-muted uppercase">03 / Percurso</div>
+            <h2 class="mt-2.5 text-[32px] font-medium leading-[1.1] tracking-[-1.1px] max-[581px]:text-[28px]">
+              Experiência que se vê no produto.</h2>
+          </div><span class="font-mono text-[11px] tracking-[1.6px] text-site-muted uppercase">4+ anos de
+            desenvolvimento</span>
+        </div>
+        <div
+          class="grid grid-cols-[.7fr_1fr_1.4fr] items-start gap-[22px] border-t border-site-border py-[25px] max-[581px]:grid-cols-1 max-[581px]:gap-2">
+          <span class="text-xs text-site-muted">Experiência profissional</span><strong
+            class="text-sm font-medium">Frontend & Full Stack</strong>
+          <p class="m-0 text-[13px] text-site-muted">Produtos para mais de 15 clientes, integrações REST, componentes
+            reutilizáveis e interfaces responsivas.</p>
+        </div>
+        <div
+          class="grid grid-cols-[.7fr_1fr_1.4fr] items-start gap-[22px] border-t border-site-border py-[25px] max-[581px]:grid-cols-1 max-[581px]:gap-2">
+          <span class="text-xs text-site-muted">Formação académica</span><strong class="text-sm font-medium">Tecnologia
+            e Design<br>de Multimédia</strong>
+          <p class="m-0 text-[13px] text-site-muted">Licenciatura com foco em desenvolvimento de software e design.</p>
+        </div>
+      </section>
+      <section
+        class="relative mx-[5%] mb-[52px] grid grid-cols-[1fr_auto] items-center gap-6 overflow-hidden rounded-[14px] border border-site-border bg-[radial-gradient(ellipse_at_95%_10%,var(--color-site-glow),transparent_68%),linear-gradient(120deg,var(--color-site-panel),var(--color-site-soft))] p-9 max-[581px]:mx-[6%] max-[581px]:mb-9 max-[581px]:grid-cols-1 max-[581px]:p-7">
+        <div>
+          <div class="font-mono text-[11px] tracking-[1.6px] uppercase text-site-accent">Explore / A minha biblioteca
+          </div>
+          <h2
+            class="mt-2.5 text-[32px] font-medium leading-[1.1] tracking-[-1.1px] max-[581px]:text-[28px] mt-2 mb-[14px]">
+            Não fiques só a olhar.<br>Experimenta.</h2>
+          <p class="m-0 text-[13px] text-site-muted">Explora componentes, muda os estados e vê como cada peça funciona.
+          </p>
+        </div><button
+          class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 inline-flex items-center justify-center gap-2.5 rounded-lg border px-[18px] py-[11px] text-xs font-medium motion-safe:transition-[transform,background-color] motion-safe:duration-180 motion-safe:hover:-translate-y-0.5 border-site-fill bg-site-fill text-site-on"
+          data-library>Abrir componentes ↗</button>
+      </section>
+      <section
+        class="flex items-center justify-between gap-5 border-t border-site-border px-[5%] py-12 max-[581px]:flex-col max-[581px]:items-start"
+        data-scroll-target="dl-contact-section">
+        <div>
+          <div class="font-mono text-[11px] tracking-[1.6px] text-site-muted uppercase">04 / Vamos conversar</div>
+          <h2 class="mt-2.5 font-medium leading-[1.1] tracking-[-1.1px] text-[40px] max-[581px]:text-[34px]">A próxima
+            boa ideia<br>pode começar aqui.</h2>
+          <p class="m-0 text-[13px] text-site-muted mt-4">Disponível para oportunidades remotas e relocalização.</p>
+        </div>
+        <div>
+          <div class="font-mono text-[11px] tracking-[1.6px] text-site-muted uppercase">Contacto</div>
+          <p class="m-0 text-[13px] text-site-muted mt-2.5"><a href="mailto:danieltlopes97@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/danieltlopes97/" target="_blank">Linkedin</a> · <a href="./assets/Daniel Lopes - Resume.pdf" target="_blank">CV em PDF</a></p>
+        </div>
+      </section>
+      <footer
+        class="flex justify-between gap-4 border-t border-site-border px-[5%] py-5 text-[10px] text-site-muted max-[581px]:flex-wrap">
+        <span>© Daniel Lopes</span><span>Construído com <span class="text-site-accent">❤</span> até ao último pixel.</span>
+      </footer>
     </div>
-   </div></div>
-   <div class="relative mt-[17px] ml-auto w-max max-w-full rounded-[9px] bg-linear-115 from-site-fill to-site-title-end px-[18px] py-[15px] font-mono text-[11px] text-site-on shadow-[0_12px_30px_#0003] translate-z-[30px] rotate-3 min-[581px]:max-[761px]:text-[10px] motion-reduce:translate-none motion-reduce:rotate-none">&lt;Button variant="primary" /&gt;</div>
-   <div class="mt-5 flex justify-between gap-3 font-mono text-[10px] text-site-muted"><span>DESIGN → CODE → EXPERIENCE</span><span>Feito para explorar.</span></div>
-   <div class="mt-3 min-h-[18px] text-[11px] text-site-accent" data-hero-status aria-live="polite"></div>
+    <div hidden data-doc-view="">
+      <div
+        class="grid min-h-[780px] grid-cols-[190px_minmax(0,1fr)] min-[581px]:max-[761px]:grid-cols-[155px_minmax(0,1fr)] max-[581px]:grid-cols-1">
+        <aside
+          class="border-r border-site-border bg-site-panel px-[18px] py-7 min-[581px]:max-[761px]:px-2.5 min-[581px]:max-[761px]:py-5 max-[581px]:border-r-0 max-[581px]:border-b max-[581px]:px-[6%] max-[581px]:py-[18px]">
+          <input
+            class="mb-[25px] w-full rounded-[7px] border border-site-border bg-site-bg px-2.5 py-[9px] text-xs text-site-ink max-[581px]:mb-2.5 max-[581px]:text-base"
+            type="search" placeholder="Pesquisar componentes" aria-label="Pesquisar componentes" data-search="">
+          <div
+            class="font-mono tracking-[1.6px] text-site-muted uppercase mx-2.5 mt-5 mb-2 text-[10px] max-[581px]:hidden">
+            Biblioteca pessoal</div>
+          <div class="max-[581px]:flex max-[581px]:flex-wrap max-[581px]:gap-1.5"><button
+              class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 mt-0.5 block w-full rounded-[5px] border-0 bg-transparent px-2.5 py-[9px] text-left text-xs text-site-muted data-[selected=true]:bg-site-selection data-[selected=true]:text-site-accent max-[581px]:w-auto max-[581px]:px-3"
+              data-component="Button" data-selected="true">Button</button><button data-component="Input"
+              class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 mt-0.5 block w-full rounded-[5px] border-0 bg-transparent px-2.5 py-[9px] text-left text-xs text-site-muted data-[selected=true]:bg-site-selection data-[selected=true]:text-site-accent max-[581px]:w-auto max-[581px]:px-3">Input</button><button
+              data-component="Card"
+              class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 mt-0.5 block w-full rounded-[5px] border-0 bg-transparent px-2.5 py-[9px] text-left text-xs text-site-muted data-[selected=true]:bg-site-selection data-[selected=true]:text-site-accent max-[581px]:w-auto max-[581px]:px-3">Card</button>
+          </div>
+          <div class="p-2.5 text-[11px] text-site-muted" hidden data-empty="">Sem resultados.</div>
+          <div
+            class="font-mono tracking-[1.6px] text-site-muted uppercase mx-2.5 mt-5 mb-2 text-[10px] max-[581px]:hidden">
+            Próximas categorias</div>
+          <p class="m-0 text-site-muted p-2.5 text-[11px]">Navegação · Feedback<br>Formulários · Dados</p>
+        </aside>
+        <main class="min-w-0 px-[6%] pt-9 pb-[50px] max-[581px]:py-[26px]">
+          <div class="mb-5 font-mono text-[11px] text-site-muted">Componentes / <span data-doc-crumb>Button</span></div>
+          <div class="flex items-center justify-between gap-2.5">
+            <h1 class="mb-[15px] text-[42px] font-medium leading-[1.1] tracking-[-1.5px] max-[581px]:text-4xl"
+              data-doc-title>Button</h1><span
+              class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">DEMO</span>
+          </div>
+          <p data-doc-description class="m-0 text-[13px] text-site-muted max-w-[520px]">Uma ação clara, em qualquer
+            contexto. Variantes, tamanhos e estados consistentes.</p>
+          <div class="mt-[26px] overflow-hidden rounded-[11px] border border-site-border shadow-[0_12px_45px_#0001]">
+            <div class="flex gap-[22px] border-b border-site-border bg-site-panel px-[18px]" role="group"
+              aria-label="Exemplo do componente"><button
+                class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 border-0 border-b-2 border-transparent bg-transparent py-[13px] text-xs text-site-muted data-[selected=true]:border-site-accent data-[selected=true]:text-site-ink"
+                data-doc-tab="preview" data-selected="true" aria-pressed="true">Preview</button><button
+                data-doc-tab="code" aria-pressed="false"
+                class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 border-0 border-b-2 border-transparent bg-transparent py-[13px] text-xs text-site-muted data-[selected=true]:border-site-accent data-[selected=true]:text-site-ink">Código</button>
+            </div>
+            <div
+              class="flex min-h-[185px] flex-wrap items-center justify-center gap-[14px] bg-site-bg bg-[radial-gradient(ellipse_at_50%_60%,var(--color-site-soft),transparent_65%),radial-gradient(var(--color-site-border)_1px,transparent_1px)] bg-size-[auto,18px_18px] px-5 py-11 max-[581px]:px-4 max-[581px]:py-[30px]"
+              data-playground><button
+                class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 inline-flex items-center justify-center gap-2.5 rounded-lg border px-[18px] py-[11px] text-xs font-medium motion-safe:transition-[transform,background-color] motion-safe:duration-180 motion-safe:hover:-translate-y-0.5 border-site-fill bg-site-fill text-site-on shadow-[0_5px_20px_#9b8aff16]"
+                data-preview-action>Continuar ↗</button><button
+                class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 inline-flex items-center justify-center gap-2.5 rounded-lg border border-site-border bg-transparent px-[18px] py-[11px] text-xs font-medium motion-safe:transition-[transform,background-color] motion-safe:duration-180 motion-safe:hover:-translate-y-0.5"
+                data-preview-secondary>Cancelar</button></div>
+            <div
+              class="flex flex-wrap items-center gap-[18px] border-t border-site-border bg-site-panel px-[18px] py-[14px] text-[11px] max-[581px]:gap-3">
+              <label class="flex items-center gap-[7px]">Variante <select data-demo-variant
+                  class="rounded-[5px] border border-site-border bg-site-bg p-[5px] text-[11px] text-site-ink">
+                  <option value="primary">Primary</option>
+                  <option value="secondary">Secondary</option>
+                </select></label><label class="flex items-center gap-[7px]">Tamanho <select data-demo-size
+                  class="rounded-[5px] border border-site-border bg-site-bg p-[5px] text-[11px] text-site-ink">
+                  <option value="md">Medium</option>
+                  <option value="sm">Small</option>
+                  <option value="lg">Large</option>
+                </select></label><label class="flex items-center gap-[7px]"><input type="checkbox" data-demo-disabled
+                  class="accent-site-fill">Disabled</label>
+            </div>
+          </div>
+          <div class="mt-3 min-h-[18px] text-[11px] text-site-accent" data-demo-status aria-live="polite"></div>
+          <h2 class="mt-8 mb-4 text-[21px] font-medium">Propriedades</h2>
+          <table class="w-full table-fixed border-collapse text-left text-[11px]">
+            <thead>
+              <tr>
+                <th
+                  class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere] text-site-muted">
+                  Prop</th>
+                <th
+                  class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere] text-site-muted">
+                  Tipo</th>
+                <th
+                  class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere] text-site-muted">
+                  Default</th>
+              </tr>
+            </thead>
+            <tbody data-props>
+              <tr>
+                <td class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]"><code
+                    class="text-[11px] text-site-accent">variant</code></td>
+                <td class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]">"primary" |
+                  "secondary"</td>
+                <td class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]">"primary"
+                </td>
+              </tr>
+              <tr>
+                <td class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]"><code
+                    class="text-[11px] text-site-accent">size</code></td>
+                <td class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]">"sm" | "md"
+                  | "lg"</td>
+                <td class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]">"md"</td>
+              </tr>
+              <tr>
+                <td class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]"><code
+                    class="text-[11px] text-site-accent">disabled</code></td>
+                <td class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]">boolean</td>
+                <td class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]">false</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="mt-[22px] rounded-lg border border-site-border p-4 text-xs text-site-muted">Exemplos ilustrativos
+            do layout. O catálogo e a API serão alinhados com os teus componentes reais.</div>
+        </main>
+      </div>
+      <footer
+        class="flex justify-between gap-4 border-t border-site-border px-[5%] py-5 text-[10px] text-site-muted max-[581px]:flex-wrap">
+        <button data-home
+          class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 border-0 bg-transparent p-0 text-[11px]">←
+          Voltar ao portefólio</button><span>Daniel Lopes / Component Library</span>
+      </footer>
+    </div>
+
   </div>
- </section>
- <div class="flex flex-wrap items-center justify-between gap-[15px] border-y border-site-border px-[5%] py-5"><div class="font-mono text-[11px] tracking-[1.6px] text-site-muted uppercase">A minha caixa de ferramentas</div><span class="text-[13px] font-medium">React</span><span class="text-[13px] font-medium">TypeScript</span><span class="text-[13px] font-medium">Svelte</span><span class="text-[13px] font-medium">Angular</span><span class="text-[13px] font-medium">Ruby on Rails</span></div>
- <section class="px-[5%] py-[54px] max-[581px]:px-[6%] max-[581px]:py-9" data-scroll-target="dl-work-section">
-  <div class="mb-[25px] flex items-end justify-between gap-[18px] max-[581px]:flex-col max-[581px]:items-start"><div><div class="font-mono text-[11px] tracking-[1.6px] text-site-muted uppercase">01 / Trabalho em destaque</div><h2 class="mt-2.5 text-[32px] font-medium leading-[1.1] tracking-[-1.1px] max-[581px]:text-[28px]">Da complexidade à clareza.</h2></div><span class="font-mono text-[11px] tracking-[1.6px] text-site-muted uppercase tracking-normal">Seleção visual · exemplos de apresentação</span></div>
-  <div class="grid grid-cols-2 gap-[18px] max-[581px]:grid-cols-1">
-   <article class="group relative overflow-hidden rounded-xl border border-site-border bg-site-panel motion-safe:transition-[transform,border-color,box-shadow] motion-safe:duration-240 motion-safe:hover:-translate-y-[5px] motion-safe:hover:border-site-accent motion-safe:hover:shadow-[0_20px_40px_#0002]"><div class="flex h-[190px] items-center justify-center bg-linear-135 from-site-soft to-site-glow p-6"><div class="flex h-[140px] w-full overflow-hidden rounded-lg border border-site-border bg-site-panel shadow-[0_18px_30px_#0003] [transform:perspective(800px)_rotateX(8deg)_rotateY(-7deg)_rotateZ(-2deg)] motion-safe:transition-transform motion-safe:duration-350 motion-safe:group-hover:[transform:perspective(800px)_rotateX(0deg)_rotateY(0deg)_rotateZ(0deg)] motion-reduce:transform-none"><div class="w-1/4 shrink-0 border-r border-site-border p-3 text-[9px] leading-[2.5] text-site-muted">● Workspace<br>Visão geral<br>Calendário<br>Equipa</div><div class="min-w-0 flex-1 p-4"><span class="text-[11px]">Agenda de instalações</span><div class="my-[9px] h-[7px] rounded-[3px] w-[65%] bg-site-fill"></div><div class="mt-3 grid grid-cols-5 gap-[3px]"><span class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span><span class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span><span class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span><span class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span><span class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span><span class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span><span class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span><span class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span><span class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span><span class="h-[26px] rounded-[3px] bg-site-border nth-[3n]:bg-site-mini-highlight"></span></div></div></div></div><div class="p-[22px]"><div class="font-mono tracking-[1.6px] text-site-muted uppercase mb-[9px] text-[10px] tracking-[1px]">Web application / interfaces operacionais</div><h3 class="mb-[9px] text-lg font-medium tracking-[-.5px]">Medições & instalações</h3><p class="m-0 text-[13px] text-site-muted mb-[15px]">Formulários dinâmicos, agendamento e mapas numa experiência de trabalho coesa.</p><div class="flex flex-wrap gap-1.5"><span class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">SvelteKit</span><span class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">Rails</span><span class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">Google Maps</span></div></div></article>
-   <article class="group relative overflow-hidden rounded-xl border border-site-border bg-site-panel motion-safe:transition-[transform,border-color,box-shadow] motion-safe:duration-240 motion-safe:hover:-translate-y-[5px] motion-safe:hover:border-site-accent motion-safe:hover:shadow-[0_20px_40px_#0002]"><div class="flex h-[190px] items-center justify-center bg-linear-135 from-site-soft to-site-glow p-6 from-site-ink-blue to-site-soft"><div class="flex h-[140px] w-full overflow-hidden rounded-lg border border-site-border bg-site-panel shadow-[0_18px_30px_#0003] [transform:perspective(800px)_rotateX(8deg)_rotateY(-7deg)_rotateZ(-2deg)] motion-safe:transition-transform motion-safe:duration-350 motion-safe:group-hover:[transform:perspective(800px)_rotateX(0deg)_rotateY(0deg)_rotateZ(0deg)] motion-reduce:transform-none"><div class="w-1/4 shrink-0 border-r border-site-border p-3 text-[9px] leading-[2.5] text-site-muted">● Components<br>Button<br>Input<br>Card</div><div class="min-w-0 flex-1 p-4"><span class="text-[11px]">Build something good.</span><div class="my-[9px] h-[7px] rounded-[3px] bg-site-border w-3/4"></div><div class="flex flex-wrap gap-1.5 mt-5"><span class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] bg-site-fill text-site-on">Primary ↗</span><span class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">Secondary</span></div><div class="my-[9px] h-[7px] rounded-[3px] bg-site-border mt-[19px] w-[90%]"></div></div></div></div><div class="p-[22px]"><div class="font-mono tracking-[1.6px] text-site-muted uppercase mb-[9px] text-[10px] tracking-[1px]">Em desenvolvimento / biblioteca pessoal</div><h3 class="mb-[9px] text-lg font-medium tracking-[-.5px]">Interfaces, peça a peça</h3><p class="m-0 text-[13px] text-site-muted mb-[15px]">Um espaço para construir, documentar e experimentar os meus componentes React.</p><button class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 inline-flex items-center justify-center gap-2.5 rounded-lg border border-site-border bg-transparent text-xs font-medium motion-safe:transition-[transform,background-color] motion-safe:duration-180 motion-safe:hover:-translate-y-0.5 px-3 py-[7px]" data-library>Abrir biblioteca ↗</button></div></article>
-  </div>
- </section>
- <section class="px-[5%] py-[54px] max-[581px]:px-[6%] max-[581px]:py-9 grid grid-cols-[.75fr_1.25fr] gap-[55px] border-t border-site-border max-[761px]:gap-[25px] max-[581px]:grid-cols-1" data-scroll-target="dl-about-section"><div><div class="font-mono text-[11px] tracking-[1.6px] text-site-muted uppercase">02 / Um pouco sobre mim</div><h2 class="mt-2.5 text-[32px] font-medium leading-[1.1] tracking-[-1.1px] max-[581px]:text-[28px]">O detalhe importa.<br>A experiência também.</h2></div><div><p class="m-0 text-site-muted text-[15px] leading-[1.8]">Sou o Daniel, developer com formação em Tecnologia e Design de Multimédia. Gosto de ligar o lado visual à lógica que faz um produto funcionar.</p><p class="m-0 text-site-muted mt-[14px] text-[15px] leading-[1.8]">Trabalho sobretudo em frontend, com experiência full stack. De formulários e dashboards a calendários e mapas, procuro criar interfaces claras, reutilizáveis e fáceis de manter.</p><div class="flex flex-wrap gap-1.5 mt-5"><span class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">Português · nativo</span><span class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">Inglês</span><span class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">Espanhol</span></div></div></section>
- <section class="px-[5%] py-[54px] max-[581px]:px-[6%] max-[581px]:py-9 border-t border-site-border" data-scroll-target="dl-experience-section"><div class="mb-[25px] flex items-end justify-between gap-[18px] max-[581px]:flex-col max-[581px]:items-start"><div><div class="font-mono text-[11px] tracking-[1.6px] text-site-muted uppercase">03 / Percurso</div><h2 class="mt-2.5 text-[32px] font-medium leading-[1.1] tracking-[-1.1px] max-[581px]:text-[28px]">Experiência que se vê no produto.</h2></div><span class="font-mono text-[11px] tracking-[1.6px] text-site-muted uppercase">4+ anos de desenvolvimento</span></div><div class="grid grid-cols-[.7fr_1fr_1.4fr] items-start gap-[22px] border-t border-site-border py-[25px] max-[581px]:grid-cols-1 max-[581px]:gap-2"><span class="text-xs text-site-muted">Experiência profissional</span><strong class="text-sm font-medium">Frontend & Full Stack</strong><p class="m-0 text-[13px] text-site-muted">Produtos para mais de 15 clientes, integrações REST, componentes reutilizáveis e interfaces responsivas.</p></div><div class="grid grid-cols-[.7fr_1fr_1.4fr] items-start gap-[22px] border-t border-site-border py-[25px] max-[581px]:grid-cols-1 max-[581px]:gap-2"><span class="text-xs text-site-muted">Formação académica</span><strong class="text-sm font-medium">Tecnologia e Design<br>de Multimédia</strong><p class="m-0 text-[13px] text-site-muted">Licenciatura com foco em desenvolvimento de software e design.</p></div></section>
- <section class="relative mx-[5%] mb-[52px] grid grid-cols-[1fr_auto] items-center gap-6 overflow-hidden rounded-[14px] border border-site-border bg-[radial-gradient(ellipse_at_95%_10%,var(--color-site-glow),transparent_68%),linear-gradient(120deg,var(--color-site-panel),var(--color-site-soft))] p-9 max-[581px]:mx-[6%] max-[581px]:mb-9 max-[581px]:grid-cols-1 max-[581px]:p-7"><div><div class="font-mono text-[11px] tracking-[1.6px] uppercase text-site-accent">Explore / A minha biblioteca</div><h2 class="mt-2.5 text-[32px] font-medium leading-[1.1] tracking-[-1.1px] max-[581px]:text-[28px] mt-2 mb-[14px]">Não fiques só a olhar.<br>Experimenta.</h2><p class="m-0 text-[13px] text-site-muted">Explora componentes, muda os estados e vê como cada peça funciona.</p></div><button class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 inline-flex items-center justify-center gap-2.5 rounded-lg border px-[18px] py-[11px] text-xs font-medium motion-safe:transition-[transform,background-color] motion-safe:duration-180 motion-safe:hover:-translate-y-0.5 border-site-fill bg-site-fill text-site-on" data-library>Abrir componentes ↗</button></section>
- <section class="flex items-center justify-between gap-5 border-t border-site-border px-[5%] py-12 max-[581px]:flex-col max-[581px]:items-start" data-scroll-target="dl-contact-section"><div><div class="font-mono text-[11px] tracking-[1.6px] text-site-muted uppercase">04 / Vamos conversar</div><h2 class="mt-2.5 font-medium leading-[1.1] tracking-[-1.1px] text-[40px] max-[581px]:text-[34px]">A próxima boa ideia<br>pode começar aqui.</h2><p class="m-0 text-[13px] text-site-muted mt-4">Disponível para oportunidades remotas e relocalização.</p></div><div><div class="font-mono text-[11px] tracking-[1.6px] text-site-muted uppercase">Contacto a completar</div><p class="m-0 text-[13px] text-site-muted mt-2.5">Email · LinkedIn · CV em PDF</p></div></section>
- <footer class="flex justify-between gap-4 border-t border-site-border px-[5%] py-5 text-[10px] text-site-muted max-[581px]:flex-wrap"><span>© Daniel Lopes</span><span>Construído com intenção. Até ao último pixel.</span></footer>
-</div>
-<div hidden data-doc-view="">
- <div class="grid min-h-[780px] grid-cols-[190px_minmax(0,1fr)] min-[581px]:max-[761px]:grid-cols-[155px_minmax(0,1fr)] max-[581px]:grid-cols-1">
-  <aside class="border-r border-site-border bg-site-panel px-[18px] py-7 min-[581px]:max-[761px]:px-2.5 min-[581px]:max-[761px]:py-5 max-[581px]:border-r-0 max-[581px]:border-b max-[581px]:px-[6%] max-[581px]:py-[18px]"><input class="mb-[25px] w-full rounded-[7px] border border-site-border bg-site-bg px-2.5 py-[9px] text-xs text-site-ink max-[581px]:mb-2.5 max-[581px]:text-base" type="search" placeholder="Pesquisar componentes" aria-label="Pesquisar componentes" data-search=""><div class="font-mono tracking-[1.6px] text-site-muted uppercase mx-2.5 mt-5 mb-2 text-[10px] max-[581px]:hidden">Biblioteca pessoal</div><div class="max-[581px]:flex max-[581px]:flex-wrap max-[581px]:gap-1.5"><button class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 mt-0.5 block w-full rounded-[5px] border-0 bg-transparent px-2.5 py-[9px] text-left text-xs text-site-muted data-[selected=true]:bg-site-selection data-[selected=true]:text-site-accent max-[581px]:w-auto max-[581px]:px-3" data-component="Button" data-selected="true">Button</button><button data-component="Input" class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 mt-0.5 block w-full rounded-[5px] border-0 bg-transparent px-2.5 py-[9px] text-left text-xs text-site-muted data-[selected=true]:bg-site-selection data-[selected=true]:text-site-accent max-[581px]:w-auto max-[581px]:px-3">Input</button><button data-component="Card" class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 mt-0.5 block w-full rounded-[5px] border-0 bg-transparent px-2.5 py-[9px] text-left text-xs text-site-muted data-[selected=true]:bg-site-selection data-[selected=true]:text-site-accent max-[581px]:w-auto max-[581px]:px-3">Card</button></div><div class="p-2.5 text-[11px] text-site-muted" hidden data-empty="">Sem resultados.</div><div class="font-mono tracking-[1.6px] text-site-muted uppercase mx-2.5 mt-5 mb-2 text-[10px] max-[581px]:hidden">Próximas categorias</div><p class="m-0 text-site-muted p-2.5 text-[11px]">Navegação · Feedback<br>Formulários · Dados</p></aside>
-  <main class="min-w-0 px-[6%] pt-9 pb-[50px] max-[581px]:py-[26px]"><div class="mb-5 font-mono text-[11px] text-site-muted">Componentes / <span data-doc-crumb>Button</span></div><div class="flex items-center justify-between gap-2.5"><h1 class="mb-[15px] text-[42px] font-medium leading-[1.1] tracking-[-1.5px] max-[581px]:text-4xl" data-doc-title>Button</h1><span class="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">DEMO</span></div><p data-doc-description class="m-0 text-[13px] text-site-muted max-w-[520px]">Uma ação clara, em qualquer contexto. Variantes, tamanhos e estados consistentes.</p>
-   <div class="mt-[26px] overflow-hidden rounded-[11px] border border-site-border shadow-[0_12px_45px_#0001]"><div class="flex gap-[22px] border-b border-site-border bg-site-panel px-[18px]" role="group" aria-label="Exemplo do componente"><button class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 border-0 border-b-2 border-transparent bg-transparent py-[13px] text-xs text-site-muted data-[selected=true]:border-site-accent data-[selected=true]:text-site-ink" data-doc-tab="preview" data-selected="true" aria-pressed="true">Preview</button><button data-doc-tab="code" aria-pressed="false" class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 border-0 border-b-2 border-transparent bg-transparent py-[13px] text-xs text-site-muted data-[selected=true]:border-site-accent data-[selected=true]:text-site-ink">Código</button></div><div class="flex min-h-[185px] flex-wrap items-center justify-center gap-[14px] bg-site-bg bg-[radial-gradient(ellipse_at_50%_60%,var(--color-site-soft),transparent_65%),radial-gradient(var(--color-site-border)_1px,transparent_1px)] bg-size-[auto,18px_18px] px-5 py-11 max-[581px]:px-4 max-[581px]:py-[30px]" data-playground><button class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 inline-flex items-center justify-center gap-2.5 rounded-lg border px-[18px] py-[11px] text-xs font-medium motion-safe:transition-[transform,background-color] motion-safe:duration-180 motion-safe:hover:-translate-y-0.5 border-site-fill bg-site-fill text-site-on shadow-[0_5px_20px_#9b8aff16]" data-preview-action>Continuar ↗</button><button class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 inline-flex items-center justify-center gap-2.5 rounded-lg border border-site-border bg-transparent px-[18px] py-[11px] text-xs font-medium motion-safe:transition-[transform,background-color] motion-safe:duration-180 motion-safe:hover:-translate-y-0.5" data-preview-secondary>Cancelar</button></div><div class="flex flex-wrap items-center gap-[18px] border-t border-site-border bg-site-panel px-[18px] py-[14px] text-[11px] max-[581px]:gap-3"><label class="flex items-center gap-[7px]">Variante <select data-demo-variant class="rounded-[5px] border border-site-border bg-site-bg p-[5px] text-[11px] text-site-ink"><option value="primary">Primary</option><option value="secondary">Secondary</option></select></label><label class="flex items-center gap-[7px]">Tamanho <select data-demo-size class="rounded-[5px] border border-site-border bg-site-bg p-[5px] text-[11px] text-site-ink"><option value="md">Medium</option><option value="sm">Small</option><option value="lg">Large</option></select></label><label class="flex items-center gap-[7px]"><input type="checkbox" data-demo-disabled class="accent-site-fill">Disabled</label></div></div>
-   <div class="mt-3 min-h-[18px] text-[11px] text-site-accent" data-demo-status aria-live="polite"></div>
-   <h2 class="mt-8 mb-4 text-[21px] font-medium">Propriedades</h2><table class="w-full table-fixed border-collapse text-left text-[11px]"><thead><tr><th class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere] text-site-muted">Prop</th><th class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere] text-site-muted">Tipo</th><th class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere] text-site-muted">Default</th></tr></thead><tbody data-props><tr><td class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]"><code class="text-[11px] text-site-accent">variant</code></td><td class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]">"primary" | "secondary"</td><td class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]">"primary"</td></tr><tr><td class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]"><code class="text-[11px] text-site-accent">size</code></td><td class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]">"sm" | "md" | "lg"</td><td class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]">"md"</td></tr><tr><td class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]"><code class="text-[11px] text-site-accent">disabled</code></td><td class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]">boolean</td><td class="border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]">false</td></tr></tbody></table>
-   <div class="mt-[22px] rounded-lg border border-site-border p-4 text-xs text-site-muted">Exemplos ilustrativos do layout. O catálogo e a API serão alinhados com os teus componentes reais.</div>
-  </main>
- </div><footer class="flex justify-between gap-4 border-t border-site-border px-[5%] py-5 text-[10px] text-site-muted max-[581px]:flex-wrap"><button data-home class="cursor-pointer touch-manipulation disabled:cursor-not-allowed disabled:opacity-40 border-0 bg-transparent p-0 text-[11px]">← Voltar ao portefólio</button><span>Daniel Lopes / Component Library</span></footer>
-</div>
+  <script>
+    (() => {
+      const root = document.querySelector('[data-portfolio]');
+      const q = (selector) => root.querySelector(selector);
+      const qa = (selector) => [...root.querySelectorAll(selector)];
+      const home = q('[data-home-view]');
+      const docs = q('[data-doc-view]');
+      const art = q('[data-art]');
+      const browser = q('[data-browser]');
+      const menu = q('[data-menu-toggle]');
+      const links = q('[data-links]');
+      const tiltMedia = matchMedia('(prefers-reduced-motion: no-preference) and (hover: hover) and (min-width: 581px)');
 
-</div>
-<script>
-(() => {
-  const root = document.querySelector('[data-portfolio]');
-  const q = (selector) => root.querySelector(selector);
-  const qa = (selector) => [...root.querySelectorAll(selector)];
-  const home = q('[data-home-view]');
-  const docs = q('[data-doc-view]');
-  const art = q('[data-art]');
-  const browser = q('[data-browser]');
-  const menu = q('[data-menu-toggle]');
-  const links = q('[data-links]');
-  const tiltMedia = matchMedia('(prefers-reduced-motion: no-preference) and (hover: hover) and (min-width: 581px)');
-
-  // Apenas propriedades variáveis do efeito; Tailwind aplica as rotações.
-  art.addEventListener('pointermove', (event) => {
-    if (!tiltMedia.matches || browser.matches(':focus-within')) return;
-    const bounds = art.getBoundingClientRect();
-    const x = Math.max(0, Math.min(1, (event.clientX - bounds.left) / bounds.width));
-    const y = Math.max(0, Math.min(1, (event.clientY - bounds.top) / bounds.height));
-    browser.style.setProperty('--dl-rx', `${(8 - y * 12).toFixed(2)}deg`);
-    browser.style.setProperty('--dl-ry', `${(-12 + x * 16).toFixed(2)}deg`);
-  });
-  function resetTilt() {
-    browser.style.removeProperty('--dl-rx');
-    browser.style.removeProperty('--dl-ry');
-  }
-  art.addEventListener('pointerleave', resetTilt);
-  tiltMedia.addEventListener('change', resetTilt);
-
-  function closeMenu() {
-    links.dataset.open = 'false';
-    menu.setAttribute('aria-expanded', 'false');
-  }
-  function showHome(target) {
-    home.hidden = false;
-    docs.hidden = true;
-    q('[data-library-navigation]').dataset.selected = 'false';
-    closeMenu();
-    if (target) {
-      const section = qa('[data-scroll-target]').find((node) => node.dataset.scrollTarget === target);
-      requestAnimationFrame(() => section?.scrollIntoView({
-        behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
-        block: 'start',
-      }));
-    }
-  }
-  qa('[data-home]').forEach((button) => button.addEventListener('click', () => {
-    showHome(); root.scrollIntoView({ block: 'start' });
-  }));
-  qa('[data-section]').forEach((button) => button.addEventListener('click', () => showHome(button.dataset.section)));
-  qa('[data-library]').forEach((button) => button.addEventListener('click', () => {
-    home.hidden = true; docs.hidden = false;
-    q('[data-library-navigation]').dataset.selected = 'true';
-    closeMenu(); root.scrollIntoView({ block: 'start' });
-  }));
-  menu.addEventListener('click', () => {
-    const open = menu.getAttribute('aria-expanded') !== 'true';
-    links.dataset.open = String(open);
-    menu.setAttribute('aria-expanded', String(open));
-  });
-  root.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') {
-      closeMenu(); menu.focus();
-    }
-  });
-  q('[data-theme-toggle]').addEventListener('click', () => {
-    root.style.colorScheme = root.style.colorScheme === 'light' ? 'dark' : 'light';
-  });
-  q('[data-hero-demo]').addEventListener('click', () => {
-    q('[data-hero-status]').textContent = 'É assim que uma pequena interação dá vida à página.';
-  });
-
-  let component = 'Button';
-  let tab = 'preview';
-  const playground = q('[data-playground]');
-  const variant = q('[data-demo-variant]');
-  const size = q('[data-demo-size]');
-  const disabled = q('[data-demo-disabled]');
-  const status = q('[data-demo-status]');
-  const descriptions = {
-    Button: 'Uma ação clara, em qualquer contexto. Variantes, tamanhos e estados consistentes.',
-    Input: 'Um campo simples, com feedback claro e espaço para o que importa.',
-    Card: 'Uma superfície para agrupar informação e dar destaque à próxima ação.',
-  };
-  // Classes completas e literais para serem detetadas pelo Tailwind no projeto.
-  const buttonBase = 'inline-flex cursor-pointer touch-manipulation items-center justify-center gap-2.5 rounded-lg border text-xs font-medium disabled:cursor-not-allowed disabled:opacity-40 motion-safe:transition-[transform,background-color] motion-safe:duration-180 motion-safe:hover:-translate-y-0.5';
-  const variants = {
-    primary: 'border-site-fill bg-site-fill text-site-on shadow-[0_5px_20px_#9b8aff16]',
-    secondary: 'border-site-border bg-transparent text-site-ink',
-  };
-  const sizes = {
-    sm: 'px-3 py-[7px]',
-    md: 'px-[18px] py-[11px]',
-    lg: 'px-6 py-[15px]',
-  };
-  const inputSizes = { sm: 'px-3 py-[7px]', md: 'px-[18px] py-[11px]', lg: 'px-6 py-[15px]' };
-  const props = {
-    Button: [['variant', '"primary" | "secondary"', '"primary"'], ['size', '"sm" | "md" | "lg"', '"md"'], ['disabled', 'boolean', 'false']],
-    Input: [['placeholder', 'string', '""'], ['size', '"sm" | "md" | "lg"', '"md"'], ['disabled', 'boolean', 'false']],
-    Card: [['variant', '"primary" | "secondary"', '"primary"'], ['children', 'ReactNode', '—'], ['disabled', 'boolean', 'false']],
-  };
-  function createButton(label, selectedVariant, onClick) {
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.textContent = label;
-    button.className = `${buttonBase} ${variants[selectedVariant]} ${sizes[size.value]}`;
-    button.disabled = disabled.checked;
-    button.addEventListener('click', onClick);
-    return button;
-  }
-  function render() {
-    q('[data-doc-title]').textContent = component;
-    q('[data-doc-crumb]').textContent = component;
-    q('[data-doc-description]').textContent = descriptions[component];
-    q('[data-props]').replaceChildren(...props[component].map((row) => {
-      const tr = document.createElement('tr');
-      row.forEach((value, index) => {
-        const td = document.createElement('td');
-        td.className = 'border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]';
-        if (index === 0) {
-          const code = document.createElement('code');
-          code.className = 'text-[11px] text-site-accent';
-          code.textContent = value; td.append(code);
-        } else td.textContent = value;
-        tr.append(td);
+      // Apenas propriedades variáveis do efeito; Tailwind aplica as rotações.
+      art.addEventListener('pointermove', (event) => {
+        if (!tiltMedia.matches || browser.matches(':focus-within')) return;
+        const bounds = art.getBoundingClientRect();
+        const x = Math.max(0, Math.min(1, (event.clientX - bounds.left) / bounds.width));
+        const y = Math.max(0, Math.min(1, (event.clientY - bounds.top) / bounds.height));
+        browser.style.setProperty('--dl-rx', `${(8 - y * 12).toFixed(2)}deg`);
+        browser.style.setProperty('--dl-ry', `${(-12 + x * 16).toFixed(2)}deg`);
       });
-      return tr;
-    }));
-    playground.replaceChildren();
-    if (tab === 'code') {
-      const pre = document.createElement('pre');
-      pre.className = 'w-full text-left text-xs leading-[1.8] whitespace-pre-wrap [overflow-wrap:anywhere]';
-      const code = document.createElement('code');
-      const flag = disabled.checked ? ' disabled' : '';
-      code.textContent = component === 'Button'
-        ? `<Button variant="${variant.value}" size="${size.value}"${flag}>\n  Continuar\n</Button>`
-        : component === 'Input'
-          ? `<Input\n  placeholder="O teu nome"\n  size="${size.value}"${flag}\n/>`
-          : `<Card variant="${variant.value}">\n  <CardTitle>Uma boa ideia</CardTitle>\n  <CardDescription>Começa aqui.</CardDescription>\n</Card>`;
-      pre.append(code); playground.append(pre); return;
-    }
-    if (component === 'Button') {
-      playground.append(
-        createButton('Continuar ↗', variant.value, () => { status.textContent = 'Ação confirmada. Podes experimentar outra variante.'; }),
-        createButton('Cancelar', 'secondary', () => { status.textContent = 'Ação cancelada.'; }),
-      );
-    }
-    if (component === 'Input') {
-      const label = document.createElement('label');
-      label.className = 'flex max-w-full flex-col gap-2 text-xs';
-      label.textContent = 'Nome';
-      const input = document.createElement('input');
-      input.className = `w-[270px] max-w-full rounded-[7px] border border-site-border bg-site-panel text-site-ink disabled:opacity-40 ${inputSizes[size.value]}`;
-      input.placeholder = 'O teu nome'; input.disabled = disabled.checked;
-      input.addEventListener('input', () => { status.textContent = input.value ? 'Valor: ' + input.value : ''; });
-      label.append(input); playground.append(label);
-    }
-    if (component === 'Card') {
-      const card = document.createElement('div');
-      card.className = 'w-[250px] max-w-full rounded-[10px] border border-site-border bg-site-panel p-5';
-      const title = document.createElement('h3');
-      title.className = 'mb-[9px] text-lg font-medium tracking-[-.5px]';
-      title.textContent = 'Uma boa ideia';
-      const description = document.createElement('p');
-      description.className = 'text-[13px] text-site-muted';
-      description.textContent = 'Começa com pequenas peças bem construídas.';
-      const button = createButton('Explorar ↗', variant.value, () => { status.textContent = 'A ação do cartão foi ativada.'; });
-      button.classList.add('mt-[18px]');
-      card.append(title, description, button); playground.append(card);
-    }
-  }
-  qa('[data-component]').forEach((button) => button.addEventListener('click', () => {
-    component = button.dataset.component;
-    qa('[data-component]').forEach((node) => { node.dataset.selected = String(node === button); });
-    status.textContent = ''; render();
-  }));
-  qa('[data-doc-tab]').forEach((button) => button.addEventListener('click', () => {
-    tab = button.dataset.docTab;
-    qa('[data-doc-tab]').forEach((node) => {
-      node.dataset.selected = String(node === button);
-      node.setAttribute('aria-pressed', String(node === button));
-    });
-    render();
-  }));
-  [variant, size, disabled].forEach((input) => input.addEventListener('change', () => { status.textContent = ''; render(); }));
-  q('[data-search]').addEventListener('input', (event) => {
-    const term = event.target.value.trim().toLowerCase();
-    let visible = 0;
-    qa('[data-component]').forEach((button) => {
-      button.hidden = !button.textContent.toLowerCase().includes(term);
-      if (!button.hidden) visible++;
-    });
-    q('[data-empty]').hidden = visible !== 0;
-  });
-  render();
-})();
+      function resetTilt() {
+        browser.style.removeProperty('--dl-rx');
+        browser.style.removeProperty('--dl-ry');
+      }
+      art.addEventListener('pointerleave', resetTilt);
+      tiltMedia.addEventListener('change', resetTilt);
 
-</script>
-</body></html>
+      function closeMenu() {
+        links.dataset.open = 'false';
+        menu.setAttribute('aria-expanded', 'false');
+      }
+      function showHome(target) {
+        home.hidden = false;
+        docs.hidden = true;
+        q('[data-library-navigation]').dataset.selected = 'false';
+        closeMenu();
+        if (target) {
+          const section = qa('[data-scroll-target]').find((node) => node.dataset.scrollTarget === target);
+          requestAnimationFrame(() => section?.scrollIntoView({
+            behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+            block: 'start',
+          }));
+        }
+      }
+      qa('[data-home]').forEach((button) => button.addEventListener('click', () => {
+        showHome(); root.scrollIntoView({ block: 'start' });
+      }));
+      qa('[data-section]').forEach((button) => button.addEventListener('click', () => showHome(button.dataset.section)));
+      qa('[data-library]').forEach((button) => button.addEventListener('click', () => {
+        alert("⚠️ Em construção! 👷🏻‍♀️🚧");
+        return;
+        home.hidden = true; docs.hidden = false;
+        q('[data-library-navigation]').dataset.selected = 'true';
+        closeMenu(); root.scrollIntoView({ block: 'start' });
+      }));
+      menu.addEventListener('click', () => {
+        const open = menu.getAttribute('aria-expanded') !== 'true';
+        links.dataset.open = String(open);
+        menu.setAttribute('aria-expanded', String(open));
+      });
+      root.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') {
+          closeMenu(); menu.focus();
+        }
+      });
+      q('[data-theme-toggle]').addEventListener('click', () => {
+        root.style.colorScheme = root.style.colorScheme === 'light' ? 'dark' : 'light';
+      });
+      q('[data-hero-demo]').addEventListener('click', () => {
+        q('[data-hero-status]').textContent = 'É assim que uma pequena interação dá vida à página.';
+      });
+
+      let component = 'Button';
+      let tab = 'preview';
+      const playground = q('[data-playground]');
+      const variant = q('[data-demo-variant]');
+      const size = q('[data-demo-size]');
+      const disabled = q('[data-demo-disabled]');
+      const status = q('[data-demo-status]');
+      const descriptions = {
+        Button: 'Uma ação clara, em qualquer contexto. Variantes, tamanhos e estados consistentes.',
+        Input: 'Um campo simples, com feedback claro e espaço para o que importa.',
+        Card: 'Uma superfície para agrupar informação e dar destaque à próxima ação.',
+      };
+      // Classes completas e literais para serem detetadas pelo Tailwind no projeto.
+      const buttonBase = 'inline-flex cursor-pointer touch-manipulation items-center justify-center gap-2.5 rounded-lg border text-xs font-medium disabled:cursor-not-allowed disabled:opacity-40 motion-safe:transition-[transform,background-color] motion-safe:duration-180 motion-safe:hover:-translate-y-0.5';
+      const variants = {
+        primary: 'border-site-fill bg-site-fill text-site-on shadow-[0_5px_20px_#9b8aff16]',
+        secondary: 'border-site-border bg-transparent text-site-ink',
+      };
+      const sizes = {
+        sm: 'px-3 py-[7px]',
+        md: 'px-[18px] py-[11px]',
+        lg: 'px-6 py-[15px]',
+      };
+      const inputSizes = { sm: 'px-3 py-[7px]', md: 'px-[18px] py-[11px]', lg: 'px-6 py-[15px]' };
+      const props = {
+        Button: [['variant', '"primary" | "secondary"', '"primary"'], ['size', '"sm" | "md" | "lg"', '"md"'], ['disabled', 'boolean', 'false']],
+        Input: [['placeholder', 'string', '""'], ['size', '"sm" | "md" | "lg"', '"md"'], ['disabled', 'boolean', 'false']],
+        Card: [['variant', '"primary" | "secondary"', '"primary"'], ['children', 'ReactNode', '—'], ['disabled', 'boolean', 'false']],
+      };
+      function createButton(label, selectedVariant, onClick) {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.textContent = label;
+        button.className = `${buttonBase} ${variants[selectedVariant]} ${sizes[size.value]}`;
+        button.disabled = disabled.checked;
+        button.addEventListener('click', onClick);
+        return button;
+      }
+      function render() {
+        q('[data-doc-title]').textContent = component;
+        q('[data-doc-crumb]').textContent = component;
+        q('[data-doc-description]').textContent = descriptions[component];
+        q('[data-props]').replaceChildren(...props[component].map((row) => {
+          const tr = document.createElement('tr');
+          row.forEach((value, index) => {
+            const td = document.createElement('td');
+            td.className = 'border-b border-site-border px-2 py-[13px] font-normal [overflow-wrap:anywhere]';
+            if (index === 0) {
+              const code = document.createElement('code');
+              code.className = 'text-[11px] text-site-accent';
+              code.textContent = value; td.append(code);
+            } else td.textContent = value;
+            tr.append(td);
+          });
+          return tr;
+        }));
+        playground.replaceChildren();
+        if (tab === 'code') {
+          const pre = document.createElement('pre');
+          pre.className = 'w-full text-left text-xs leading-[1.8] whitespace-pre-wrap [overflow-wrap:anywhere]';
+          const code = document.createElement('code');
+          const flag = disabled.checked ? ' disabled' : '';
+          code.textContent = component === 'Button'
+            ? `<Button variant="${variant.value}" size="${size.value}"${flag}>\n  Continuar\n</Button>`
+            : component === 'Input'
+              ? `<Input\n  placeholder="O teu nome"\n  size="${size.value}"${flag}\n/>`
+              : `<Card variant="${variant.value}">\n  <CardTitle>Uma boa ideia</CardTitle>\n  <CardDescription>Começa aqui.</CardDescription>\n</Card>`;
+          pre.append(code); playground.append(pre); return;
+        }
+        if (component === 'Button') {
+          playground.append(
+            createButton('Continuar ↗', variant.value, () => { status.textContent = 'Ação confirmada. Podes experimentar outra variante.'; }),
+            createButton('Cancelar', 'secondary', () => { status.textContent = 'Ação cancelada.'; }),
+          );
+        }
+        if (component === 'Input') {
+          const label = document.createElement('label');
+          label.className = 'flex max-w-full flex-col gap-2 text-xs';
+          label.textContent = 'Nome';
+          const input = document.createElement('input');
+          input.className = `w-[270px] max-w-full rounded-[7px] border border-site-border bg-site-panel text-site-ink disabled:opacity-40 ${inputSizes[size.value]}`;
+          input.placeholder = 'O teu nome'; input.disabled = disabled.checked;
+          input.addEventListener('input', () => { status.textContent = input.value ? 'Valor: ' + input.value : ''; });
+          label.append(input); playground.append(label);
+        }
+        if (component === 'Card') {
+          const card = document.createElement('div');
+          card.className = 'w-[250px] max-w-full rounded-[10px] border border-site-border bg-site-panel p-5';
+          const title = document.createElement('h3');
+          title.className = 'mb-[9px] text-lg font-medium tracking-[-.5px]';
+          title.textContent = 'Uma boa ideia';
+          const description = document.createElement('p');
+          description.className = 'text-[13px] text-site-muted';
+          description.textContent = 'Começa com pequenas peças bem construídas.';
+          const button = createButton('Explorar ↗', variant.value, () => { status.textContent = 'A ação do cartão foi ativada.'; });
+          button.classList.add('mt-[18px]');
+          card.append(title, description, button); playground.append(card);
+        }
+      }
+      qa('[data-component]').forEach((button) => button.addEventListener('click', () => {
+        component = button.dataset.component;
+        qa('[data-component]').forEach((node) => { node.dataset.selected = String(node === button); });
+        status.textContent = ''; render();
+      }));
+      qa('[data-doc-tab]').forEach((button) => button.addEventListener('click', () => {
+        tab = button.dataset.docTab;
+        qa('[data-doc-tab]').forEach((node) => {
+          node.dataset.selected = String(node === button);
+          node.setAttribute('aria-pressed', String(node === button));
+        });
+        render();
+      }));
+      [variant, size, disabled].forEach((input) => input.addEventListener('change', () => { status.textContent = ''; render(); }));
+      q('[data-search]').addEventListener('input', (event) => {
+        const term = event.target.value.trim().toLowerCase();
+        let visible = 0;
+        qa('[data-component]').forEach((button) => {
+          button.hidden = !button.textContent.toLowerCase().includes(term);
+          if (!button.hidden) visible++;
+        });
+        q('[data-empty]').hidden = visible !== 0;
+      });
+      render();
+    })();
+
+  </script>
+</body>
+
+</html>
