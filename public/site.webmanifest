@@ -1,6 +1,6 @@
 {
-  "name": "Daniel Lopes — Frontend Developer",
-  "short_name": "daniel.dev",
+  "name": "D-Lopes — Portfolio & Component Library",
+  "short_name": "D-Lopes",
   "id": "/",
   "start_url": "/",
   "scope": "/",
@@ -26,5 +26,7 @@
       "type": "image/png",
       "purpose": "maskable"
     }
-  ]
+  ],
+  "description": "Daniel Lopes portfolio and interactive UI component library.",
+  "lang": "en"
 }

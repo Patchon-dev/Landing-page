@@ -4,13 +4,13 @@ import { Menu, Portal } from "@skeletonlabs/skeleton-react";
 import useMobile from "../hooks/useMobile";
 import "./lang-picker.css";
 
-import de from "../../assets/flags/de.svg";
-import es from "../../assets/flags/es.svg";
-import fr from "../../assets/flags/fr.svg";
-import it from "../../assets/flags/it.svg";
-import nl from "../../assets/flags/nl.svg";
-import pt from "../../assets/flags/pt.svg";
-import en from "../../assets/flags/uk.svg";
+import de from "../../assets/optimized/flags/de.webp";
+import es from "../../assets/optimized/flags/es.webp";
+import fr from "../../assets/optimized/flags/fr.webp";
+import it from "../../assets/optimized/flags/it.webp";
+import nl from "../../assets/optimized/flags/nl.webp";
+import pt from "../../assets/optimized/flags/pt.webp";
+import en from "../../assets/optimized/flags/uk.webp";
 
 const flags = {
   de,
@@ -91,7 +91,7 @@ export default function LangPicker() {
   if (isMobile) {
     return (
       <label className="lang-picker-native">
-        <img src={flags[lang]} alt="" className="lang-picker-flag" />
+        <img src={flags[lang]} width={14} height={10} decoding="async" alt="" className="lang-picker-flag" />
         <select
           aria-label={t("language")}
           value={lang}
@@ -116,7 +116,7 @@ export default function LangPicker() {
         aria-label={`${t("language")}: ${lang.toUpperCase()}`}
         className="lang-picker-trigger"
       >
-        <img src={flags[lang]} alt="" className="lang-picker-flag" />
+        <img src={flags[lang]} width={14} height={10} decoding="async" alt="" className="lang-picker-flag" />
         <span className="uppercase">{lang}</span>
         <svg
           aria-hidden="true"
@@ -147,6 +147,10 @@ export default function LangPicker() {
                 >
                   <img
                     src={flags[language]}
+                    width={14}
+                    height={10}
+                    loading="lazy"
+                    decoding="async"
                     alt=""
                     className="lang-picker-flag"
                   />
