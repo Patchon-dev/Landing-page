@@ -1,8 +1,8 @@
-import { useId, useState, type ReactNode } from 'react';
+import { useEffect, useId, useRef, useState, type ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import Dropdown from '../Dropdown';
 import Input from '../input/Input';
-import { dataViewPageNumbers, filterDataViewItems, paginateDataViewItems, type DataViewFilter } from './data';
+import { dataViewGridPageSize, dataViewPageNumbers, filterDataViewItems, paginateDataViewItems, type DataViewFilter } from './data';
 import './data-view.css';
 
 export interface DataViewColumn<T> {
@@ -37,11 +37,29 @@ export interface DataViewProps<T> {
 export default function DataView<T>({ items, columns, getRowId, getItemLabel, getSearchValue, title, variant = 'table', onVariantChange, tableVariant = 'normal', filters = [], actions = [], pageSize = 6 }: DataViewProps<T>) {
   const { t } = useTranslation();
   const id = useId();
+  const container = useRef<HTMLElement>(null);
+  const [gridColumns, setGridColumns] = useState(1);
+  useEffect(() => {
+    if (variant !== 'cards' || !container.current) return;
+    const element = container.current;
+    const measure = () => {
+      const grid = element.querySelector<HTMLElement>('.data-view-cards');
+      if (!grid) return;
+      const style = getComputedStyle(grid);
+      const width = grid.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
+      const gap = parseFloat(style.columnGap) || 0;
+      setGridColumns(Math.max(1, Math.floor((width + gap) / (250 + gap))));
+    };
+    const observer = new ResizeObserver(measure);
+    observer.observe(element);
+    measure();
+    return () => observer.disconnect();
+  }, [variant]);
   const [search, setSearch] = useState('');
   const [filterValues, setFilterValues] = useState<Record<string, string>>({});
   const [requestedPage, setPage] = useState(1);
   const filtered = filterDataViewItems(items, search, getSearchValue, filters, filterValues);
-  const pagination = paginateDataViewItems(filtered, requestedPage, pageSize);
+  const pagination = paginateDataViewItems(filtered, requestedPage, variant === 'cards' ? dataViewGridPageSize(pageSize, gridColumns) : pageSize);
   const hasFilters = Boolean(search || Object.values(filterValues).some(Boolean));
 
   function renderActions(item: T) {
@@ -53,7 +71,7 @@ export default function DataView<T>({ items, columns, getRowId, getItemLabel, ge
     </div>;
   }
 
-  return <section className="data-view" aria-label={title ?? t('dataView')} data-view={variant}>
+  return <section ref={container} className="data-view" aria-label={title ?? t('dataView')} data-view={variant}>
     <header className="data-view-header">
       <div className="data-view-heading"><h2>{title ?? t('dataView')}</h2><span className="data-view-count">{filtered.length}</span></div>
       {onVariantChange && <div className="data-view-switch" role="group" aria-label={t('dataViewLayout')}>

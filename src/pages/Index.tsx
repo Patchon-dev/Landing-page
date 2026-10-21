@@ -7,7 +7,9 @@ import {
 } from "react";
 import Button from "../lib/components/button/Button";
 import CV from "../assets/Daniel Lopes - Resume.pdf";
-import ME from "../assets/Daniel Lopes.png";
+import ME from "../assets/optimized/profile-60.webp";
+import ME2x from "../assets/optimized/profile-120.webp";
+import ME3x from "../assets/optimized/profile-180.webp";
 import { useTranslation } from "react-i18next";
 import CreativeGrid from "../lib/components/CreativeGrid";
 
@@ -211,6 +213,11 @@ export default function Index() {
                         <img
                           className="max-w-[60px] object-cover rounded-full"
                           src={ME}
+                          srcSet={`${ME} 60w, ${ME2x} 120w, ${ME3x} 180w`}
+                          sizes="60px"
+                          width={60}
+                          height={75}
+                          decoding="async"
                           alt="Daniel Lopes"
                         />
                       </span>

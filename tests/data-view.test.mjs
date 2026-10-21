@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { dataViewPageNumbers, filterDataViewItems, paginateDataViewItems } from '../src/lib/components/data-view/data.ts';
+import { dataViewGridPageSize, dataViewPageNumbers, filterDataViewItems, paginateDataViewItems } from '../src/lib/components/data-view/data.ts';
 
 const users = [
   { id: '1', name: 'Inês Matos', email: 'ines@example.com', role: 'member', status: 'active' },
@@ -44,4 +44,19 @@ test('pagination numbers include the first and last page without duplicates or e
   assert.deepEqual(dataViewPageNumbers(1, 3), [1, 2, 3]);
   assert.deepEqual(dataViewPageNumbers(5, 10), [1, 'gap', 4, 5, 6, 'gap', 10]);
   assert.deepEqual(dataViewPageNumbers(10, 10), [1, 'gap', 9, 10]);
+});
+
+test('card pagination rounds up to complete responsive grid rows', () => {
+  for (const size of [6, 12, 18]) {
+    for (const columns of [1, 2, 3, 4, 5, 6, 7]) {
+      const result = dataViewGridPageSize(size, columns);
+      assert.equal(result % columns, 0);
+      assert.ok(result >= size && result < size + columns);
+      const items = Array.from({ length: 200 }, (_, index) => index);
+      const pages = Array.from({ length: Math.ceil(items.length / result) }, (_, page) => paginateDataViewItems(items, page + 1, result).items);
+      assert.deepEqual(pages.flat(), items);
+    }
+  }
+  assert.equal(dataViewGridPageSize(6, 4), 8);
+  assert.equal(dataViewGridPageSize(NaN, 0), 6);
 });

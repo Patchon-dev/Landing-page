@@ -50,6 +50,8 @@ export default function Avatar({
       {avatarUrl ? (
         <img
           src={avatarUrl}
+          loading="lazy"
+          decoding="async"
           alt={t("avatar")}
           className={`${width} ${text} ${bgColor} aspect-square rounded-full object-cover`}
         />
