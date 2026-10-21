@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@import "@skeletonlabs/skeleton";
+@import "@skeletonlabs/skeleton-react";
+@import "./lib/themes/shared.css";
+@import "./lib/themes/light.css";
+@import "./lib/themes/dark.css";
+@import "./App.postcss";
+@import "./lib/layouts/components.css";
+@import "./lib/components/button/button.css";
+@import "./lib/components/input/input.css";
+@import "./lib/components/toast/toast.css";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Hide the focus halo without changing focus, keyboard events or ARIA. */
+:root
+  :is(button, input, textarea, select, [role="button"], [role="menu"]):focus {
+  outline: none;
+}
+
+:where(button, input, textarea, select, [role="button"]) {
+  -webkit-tap-highlight-color: transparent;
+}
+
+[data-scope="menu"][role="menu"][data-state="open"] {
+  border: 1px solid var(--site-border);
+  border-radius: 9px;
+  padding: 9px 16px;
+  color: var(--site-ink);
+  backdrop-filter: blur(12px);
+  pointer-events: auto;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button[data-variant="gradient"],
+button[data-variant="gradient-secondary"] {
+  background-image: var(--button-gradient);
+  background-clip: border-box;
+  border-color: transparent;
+  cursor: pointer;
+  @apply btn rounded-[9px] px-[18px] py-[15px] font-mono text-[11px] text-site-gradient-text shadow-[0_12px_30px_var(--site-shadow-button)] min-[581px]:max-[761px]:text-[10px] motion-reduce:translate-none motion-reduce:rotate-none;
+
+  &[data-variant="gradient-secondary"] {
+    --button-gradient: var(--button-secondary-gradient);
+    color: var(--site-secondary-on);
+  }
+}
+
+button[data-variant="border-gradient"],
+button[data-variant="border-gradient-secondary"] {
+  position: relative;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  @apply btn rounded-[9px] px-[18px] py-[15px] font-mono text-[11px] text-site-ink shadow-[0_12px_30px_var(--site-shadow-button)] min-[581px]:max-[761px]:text-[10px] motion-reduce:translate-none motion-reduce:rotate-none;
+
+  &[data-variant="border-gradient-secondary"] {
+    --button-gradient: var(--button-secondary-gradient);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: var(--button-gradient);
+    mask:
+      linear-gradient(var(--site-ink) 0 0) content-box,
+      linear-gradient(var(--site-ink) 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}

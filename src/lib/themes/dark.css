@@ -1,0 +1,35 @@
+/* dark mode: semantic colors used by the pages and Skeleton. */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --site-bg: var(--color-surface-950);
+  --site-panel: var(--color-surface-900);
+  --site-ink: #f5f5f7;
+  --site-muted: var(--color-surface-400);
+  --site-border: var(--color-surface-700);
+  --site-accent: var(--color-primary-500);
+  --site-ink-blue: var(--color-secondary-950);
+  --site-glow: var(--color-tertiary-800);
+  --site-halo: var(--color-tertiary-500);
+  --site-title-end: var(--color-secondary-300);
+  --site-soft: var(--color-tertiary-950);
+  --site-grid: #9b8aff24;
+  --site-selection: var(--color-tertiary-900);
+  --site-mini-highlight: #685799;
+  --site-gradient-text: var(--site-on);
+  --site-secondary: var(--color-secondary-300);
+  --site-secondary-end: var(--color-secondary-500);
+  --site-secondary-on: var(--color-secondary-contrast-dark);
+  /* Toast gradients use the existing status and blue palettes. */
+  --toast-success-from: var(--color-success-800);
+  --toast-success-to: var(--color-success-950);
+  --toast-success-icon: var(--color-success-400);
+  --toast-warning-from: var(--color-warning-800);
+  --toast-warning-to: var(--color-warning-950);
+  --toast-warning-icon: var(--color-warning-400);
+  --toast-error-from: var(--color-error-800);
+  --toast-error-to: var(--color-error-950);
+  --toast-error-icon: var(--color-error-400);
+  --toast-info-from: var(--color-secondary-800);
+  --toast-info-to: var(--color-secondary-950);
+  --toast-info-icon: var(--color-secondary-400);
+}

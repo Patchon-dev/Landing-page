@@ -1,0 +1,33 @@
+/* Preserve the original primary field; secondary uses the button palette. */
+.site-input {
+  --input-background: var(--site-panel);
+  --input-color: var(--site-ink);
+  --input-border: var(--site-border);
+  border: 1px solid var(--input-border);
+  background-color: var(--input-background);
+  color: var(--input-color);
+  caret-color: currentColor;
+}
+.site-input[data-variant="secondary"] {
+  --input-background: var(--site-secondary);
+  --input-color: var(--site-secondary-on);
+  --input-border: var(--site-secondary);
+}
+.site-input[data-variant="secondary"]::placeholder {
+  color: currentColor;
+  opacity: 0.7;
+}
+.site-input:disabled {
+  cursor: not-allowed;
+}
+@layer components {
+  .site-text-field { box-sizing: border-box; width: 100%; min-width: 0; border-radius: 7px; padding: 11px 18px; font: inherit; font-size: 12px; line-height: 1.55; }
+  .site-text-field[data-size='sm'] { padding: 7px 12px; }
+  .site-text-field[data-size='lg'] { padding: 15px 24px; }
+  .site-text-field:disabled { opacity: 0.4; }
+  .site-textarea { min-height: 96px; resize: vertical; }
+}
+:root .site-text-field:focus-visible { outline: 2px solid var(--site-accent); outline-offset: 3px; }
+@media (max-width: 767px), (hover: none) and (pointer: coarse) {
+  .site-text-field { min-height: 44px; font-size: 16px; }
+}
