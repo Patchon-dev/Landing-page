@@ -19,13 +19,13 @@ export function filterDataViewItems<T>(items: readonly T[], search: string, getS
 }
 
 export function dataViewGridPageSize(requestedSize: number, columns: number): number {
-  const size = Number.isFinite(requestedSize) && requestedSize > 0 ? Math.max(1, Math.floor(requestedSize)) : 6;
+  const size = Number.isFinite(requestedSize) && requestedSize > 0 ? Math.max(1, Math.floor(requestedSize)) : 10;
   const count = Number.isFinite(columns) && columns > 0 ? Math.max(1, Math.floor(columns)) : 1;
   return Math.ceil(size / count) * count;
 }
 
 export function paginateDataViewItems<T>(items: readonly T[], requestedPage: number, requestedSize: number) {
-  const pageSize = Number.isFinite(requestedSize) && requestedSize > 0 ? Math.max(1, Math.floor(requestedSize)) : 6;
+  const pageSize = Number.isFinite(requestedSize) && requestedSize > 0 ? Math.max(1, Math.floor(requestedSize)) : 10;
   const pageCount = Math.max(1, Math.ceil(items.length / pageSize));
   const page = Math.max(1, Math.min(pageCount, Number.isFinite(requestedPage) ? Math.floor(requestedPage) : 1));
   const offset = (page - 1) * pageSize;

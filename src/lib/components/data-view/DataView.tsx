@@ -34,7 +34,7 @@ export interface DataViewProps<T> {
   pageSize?: number;
 }
 
-export default function DataView<T>({ items, columns, getRowId, getItemLabel, getSearchValue, title, variant = 'table', onVariantChange, tableVariant = 'normal', filters = [], actions = [], pageSize = 6 }: DataViewProps<T>) {
+export default function DataView<T>({ items, columns, getRowId, getItemLabel, getSearchValue, title, variant = 'table', onVariantChange, tableVariant = 'normal', filters = [], actions = [], pageSize = 10 }: DataViewProps<T>) {
   const { t } = useTranslation();
   const id = useId();
   const container = useRef<HTMLElement>(null);
