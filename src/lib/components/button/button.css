@@ -1,0 +1,66 @@
+/* Button demos use the same semantic colors and radius as the site theme. */
+.site-button {
+  --button-border: var(--site-border);
+  --button-color: var(--site-ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid var(--button-border);
+  border-radius: var(--radius-base);
+  background: var(--button-background, none) padding-box;
+  padding: 11px 18px;
+  color: var(--button-color);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.55;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.site-button[data-variant="primary"] {
+  --button-border: var(--site-fill);
+  --button-color: var(--site-gradient-text);
+  --button-background: linear-gradient(var(--site-fill), var(--site-fill));
+  box-shadow: 0 5px 20px var(--site-fill-shadow);
+}
+.site-button[data-variant="secondary"] {
+  --button-border: var(--site-secondary);
+  --button-color: var(--site-secondary-on);
+  --button-background: linear-gradient(
+    var(--site-secondary),
+    var(--site-secondary)
+  );
+  box-shadow: 0 5px 20px var(--site-secondary-shadow);
+}
+.site-button[data-size] {
+  border-radius: var(--radius-base);
+  font-family: inherit;
+  font-size: 12px;
+}
+.site-button[data-size="sm"] {
+  padding: 7px 12px;
+}
+.site-button[data-size="md"] {
+  padding: 11px 18px;
+}
+.site-button[data-size="lg"] {
+  padding: 15px 24px;
+}
+.site-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+.site-button:focus-visible {
+  outline: 2px solid var(--site-accent);
+  outline-offset: 4px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .site-button {
+    transition:
+      transform 180ms,
+      background-color 180ms;
+  }
+  .site-button:not(:disabled):hover {
+    transform: translateY(-2px);
+  }
+}

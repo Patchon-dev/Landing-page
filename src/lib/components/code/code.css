@@ -1,0 +1,26 @@
+/* VS Code Dark Modern editor palette, shared by every code view. */
+div:has(> .component-code) {
+  background-image: none;
+  background-color: var(--color-surface-950);
+}
+.component-code {
+  margin: 0;
+  background: var(--color-surface-950);
+  color: #cccccc;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  tab-size: 2;
+}
+.component-code:focus-visible { outline: 2px solid #0078d4; outline-offset: -2px; }
+.component-code::selection,
+.component-code ::selection { background: #264f78; }
+.component-code .token:is(.comment, .prolog, .doctype, .cdata) { color: #6a9955; }
+.component-code .token:is(.keyword, .boolean, .tag) { color: #569cd6; }
+.component-code .token.control-flow { color: #c586c0; }
+.component-code .token:is(.string, .attr-value) { color: #ce9178; }
+.component-code .token.function { color: #dcdcaa; }
+.component-code .token:is(.class-name, .builtin) { color: #4ec9b0; }
+.component-code .token.number { color: #b5cea8; }
+.component-code .token.constant { color: #4fc1ff; }
+.component-code .token:is(.attr-name, .property, .parameter, .variable) { color: #9cdcfe; }
+.component-code .token:is(.operator, .punctuation) { color: #d4d4d4; }
+.component-code .token.tag > .token.punctuation { color: #808080; }
