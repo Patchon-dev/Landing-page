@@ -71,8 +71,8 @@ export default function CardPage() {
           {tab === 'code' ? (
             <CodeBlock className="w-full text-left text-xs leading-[1.8] whitespace-pre-wrap [overflow-wrap:anywhere]" code={`<Card variant="${variant}"${disabled ? ' disabled' : ''}>
   <div className="mb-[9px] flex items-center gap-3">
-    <div role="img" aria-label="Daniel Lopes" className="shrink-0">
-      <Avatar user={{ name: "Daniel Lopes" }} size="sm" />
+    <div role="img" aria-label="Carlos Vitor" className="shrink-0">
+      <Avatar user={{ name: "Carlos Vitor" }} size="sm" />
     </div>
     <CardTitle>${t("goodIdea")}</CardTitle>
   </div>
@@ -82,8 +82,8 @@ export default function CardPage() {
             <>
               <div className="w-[250px] max-w-full rounded-[10px] border border-site-border bg-site-panel p-5">
                 <div className="mb-[9px] flex items-center gap-3">
-                  <div role="img" aria-label="Daniel Lopes" className="shrink-0">
-                    <Avatar user={{ name: 'Daniel Lopes' }} size="sm" />
+                  <div role="img" aria-label="Carlos Vitor" className="shrink-0">
+                    <Avatar user={{ name: 'Carlos Vitor' }} size="sm" />
                   </div>
                   <h3 className="text-lg font-medium tracking-[-.5px]">{t("goodIdea")}</h3>
                 </div>

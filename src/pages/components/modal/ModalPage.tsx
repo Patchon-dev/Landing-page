@@ -15,7 +15,7 @@ function ProfileFields({ longContent }: { longContent: boolean }) {
         {t("name")}
         <Input
           name="name"
-          defaultValue="Daniel Lopes"
+          defaultValue="Daniel Matos"
           autoComplete="name"
           required
         />
@@ -59,7 +59,7 @@ function ProfileFields() {
     <div className="modal-demo-fields">
       <label className="modal-demo-field">
         ${t("name")}
-        <Input name="name" defaultValue="Daniel Lopes" autoComplete="name" required />
+        <Input name="name" defaultValue="Daniel Matos" autoComplete="name" required />
       </label>
       <label className="modal-demo-field">
         ${t("modalEmail")}
