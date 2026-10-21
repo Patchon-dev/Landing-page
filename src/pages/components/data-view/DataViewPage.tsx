@@ -32,7 +32,7 @@ export default function DataViewPage() {
   const [tab, setTab] = useState<'preview' | 'code'>('preview');
   const [variant, setVariant] = useState<'table' | 'cards'>('table');
   const [tableVariant, setTableVariant] = useState<'normal' | 'striped'>('normal');
-  const [pageSize, setPageSize] = useState(6);
+  const [pageSize, setPageSize] = useState(10);
   const [users, setUsers] = useState<DemoUser[]>(() => sampleUsers.map((user) => ({ ...user })));
   const [dialog, setDialog] = useState<{ type: 'edit' | 'delete'; user: DemoUser } | null>(null);
   const [message, setMessage] = useState('');
@@ -102,7 +102,7 @@ const columns = [
     ['getRowId / getItemLabel / getSearchValue', '(item: T) => string', '—'],
     ['title', 'string', t('dataView')], ['variant', '"table" | "cards"', '"table"'],
     ['onVariantChange', '(variant: "table" | "cards") => void', '—'],
-    ['tableVariant', '"normal" | "striped"', '"normal"'], ['pageSize', 'number', '6'],
+    ['tableVariant', '"normal" | "striped"', '"normal"'], ['pageSize', 'number', '10'],
     ['filters', 'DataViewFilter<T>[]', '[]'], ['actions', 'DataViewAction<T>[]', '[]'],
   ];
 
@@ -130,7 +130,7 @@ const columns = [
         <Dropdown id="data-view-table-style" label={t('dataViewTableStyle')} value={tableVariant} onChange={setTableVariant} disabled={variant === 'cards'}
           options={[{ value: 'normal', label: t('dataViewNormal') }, { value: 'striped', label: t('dataViewStriped') }]} /></div>
       <div className="component-control"><label htmlFor="data-view-page-size" className="component-control-label">{t('dataViewPageSize')}</label>
-        <Dropdown id="data-view-page-size" label={t('dataViewPageSize')} value={pageSize} onChange={setPageSize} options={[6, 12, 18].map((value) => ({ value, label: String(value) }))} /></div>
+        <Dropdown id="data-view-page-size" label={t('dataViewPageSize')} value={pageSize} onChange={setPageSize} options={[10, 20, 30].map((value) => ({ value, label: String(value) }))} /></div>
     </div>
     <p role="status" className="mt-3 min-h-[18px] text-[11px] text-site-accent">{message}</p>
     <p className="mt-4 text-xs text-site-muted">{t('dataViewPreviewNote')}</p>

@@ -34,7 +34,7 @@ test('data view paginates the filtered result and clamps after deletion or size 
 test('data view handles an empty list and invalid pagination arguments', () => {
   const empty = paginateDataViewItems([], 4, 6);
   assert.deepEqual([empty.items, empty.page, empty.pageCount, empty.from, empty.to], [[], 1, 1, 0, 0]);
-  for (const size of [0, -1, NaN, Infinity]) assert.equal(paginateDataViewItems(users, 1, size).pageSize, 6);
+  for (const size of [0, -1, NaN, Infinity]) assert.equal(paginateDataViewItems(users, 1, size).pageSize, 10);
   for (const page of [0, -1, NaN, Infinity]) assert.equal(paginateDataViewItems(users, page, 1).page, 1);
   assert.equal(paginateDataViewItems(users, 1, 0.5).pageSize, 1);
 });
@@ -47,7 +47,7 @@ test('pagination numbers include the first and last page without duplicates or e
 });
 
 test('card pagination rounds up to complete responsive grid rows', () => {
-  for (const size of [6, 12, 18]) {
+  for (const size of [10, 20, 30]) {
     for (const columns of [1, 2, 3, 4, 5, 6, 7]) {
       const result = dataViewGridPageSize(size, columns);
       assert.equal(result % columns, 0);
@@ -58,5 +58,5 @@ test('card pagination rounds up to complete responsive grid rows', () => {
     }
   }
   assert.equal(dataViewGridPageSize(6, 4), 8);
-  assert.equal(dataViewGridPageSize(NaN, 0), 6);
+  assert.equal(dataViewGridPageSize(NaN, 0), 10);
 });
