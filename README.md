@@ -1,5 +1,7 @@
 # D-Lopes — Portfolio & Component Library
 
+**Private, proprietary project. External contributions are closed. Changes and reuse require prior written permission from the owner. See [the contribution policy](CONTRIBUTING.md) and [LICENSE](LICENSE).**
+
 A responsive portfolio and interactive UI component library built with React and TypeScript. Originally a static HTML page, the project now includes reusable components, client-side routing, multilingual content, light and dark themes, and configurable live examples.
 
 ## Features
@@ -141,7 +143,7 @@ public/                  Static public assets
 tests/                  Automated tests
 ```
 
-## Customisation
+## Customisation for authorised maintainers
 
 - Update portfolio content and contact details in `src/pages/Index.tsx` and the translation files.
 - Replace the profile image and résumé in `src/assets/`.
@@ -151,13 +153,13 @@ tests/                  Automated tests
 
 ## Project documentation
 
-- [Contributing](CONTRIBUTING.md): component workflow and validation.
+- [Contribution policy](CONTRIBUTING.md): access restrictions and the workflow for authorised maintainers.
 - [Production deployment](docs/DEPLOYMENT.md): hosting, routing, external services and release checks.
 - [Colour reference](docs/cores-fixas.md): theme tokens and intentional fixed palettes.
 
 ## Licence
 
-Distributed under the [MIT licence](LICENSE).
+Proprietary — all rights reserved. No open-source licence is granted. See [LICENSE](LICENSE). Third-party dependencies and assets retain their own licences.
 
 ## Image assets
 

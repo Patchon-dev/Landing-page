@@ -359,5 +359,12 @@
   "chartsDevelopment": "Desenvolvimento",
   "chartsDesign": "Design",
   "chartsSupport": "Suporte",
-  "chartsResearch": "Investigação"
+  "chartsResearch": "Investigação",
+  "error404Title": "Parece que te desviaste.",
+  "error404Description": "A página que procuras pode ter mudado de endereço ou o link pode estar incorreto. Vamos voltar a um lugar conhecido.",
+  "error404Back": "Voltar atrás",
+  "error500Status": "500 / Erro interno do servidor",
+  "error500Title": "Algo correu mal.",
+  "error500Description": "Não foi possível carregar esta página. Tenta novamente ou volta à página inicial.",
+  "error500Retry": "Tentar novamente"
 }

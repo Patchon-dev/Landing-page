@@ -57,7 +57,7 @@
   },
   "description": "Daniel Lopes portfolio and interactive React UI component library.",
   "author": "Daniel Lopes",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "engines": {
     "node": ">=24.0.0"
   }

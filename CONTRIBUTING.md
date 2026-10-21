@@ -1,4 +1,10 @@
-# Contributing
+# Contribution policy
+
+This is a privately maintained, proprietary project. External pull requests, patches and other contributions are not accepted unless the owner has given prior written approval.
+
+Source access does not grant permission to copy, modify or redistribute the project. See [LICENSE](LICENSE) for the applicable terms. Repository write access must be limited to people explicitly authorised by the owner.
+
+The following workflow is for the owner and authorised maintainers only.
 
 ## Local setup
 
@@ -20,7 +26,7 @@ npm run dev
 
 ## Validation
 
-Before submitting a change, run:
+Before applying an authorised change, run:
 
 ```sh
 npm run lint
@@ -42,4 +48,4 @@ Describe the problem, resulting behaviour and validation performed. Include scre
 
 Update the README catalogue when adding a public component page. Keep operational details in [the deployment guide](docs/DEPLOYMENT.md) and colour guidance in [the colour reference](docs/cores-fixas.md).
 
-The project is distributed under the [MIT licence](LICENSE). Preserve existing copyright and third-party attribution, including the OpenStreetMap attribution in the map.
+The project is proprietary and all rights are reserved under [LICENSE](LICENSE). Preserve existing copyright and third-party licence notices and attribution, including OpenStreetMap attribution in the map.
