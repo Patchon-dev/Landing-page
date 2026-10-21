@@ -41,6 +41,20 @@ Set the server's document root to the directory containing the deployed `index.h
 
 After deployment, open `/components/charts` directly and refresh it. Both requests must load the application. Also check the résumé download, icons, language switching and map loading.
 
+## Vercel
+
+The root `vercel.json` selects the Vite framework, builds into `dist/` and rewrites application paths to `/index.html`. Vercel serves existing static assets normally; React Router handles application paths after the document loads.
+
+Commit and deploy this configuration with the application. It enables direct visits and refreshes on `/components/charts`, `/500` and unknown paths. Without the fallback, Vercel can return its own `404 NOT_FOUND` before React loads.
+
+Verify the deployed application by directly opening:
+
+- `/components/charts`: chart page.
+- `/500`: custom 500 page.
+- `/components/does-not-exist`: custom 404 page without the sidebar.
+
+The custom 500 page also handles page-rendering failures through the React error boundary. It cannot replace Vercel platform errors when the application itself cannot be served. These client-side error screens do not set HTTP 404 or 500 response codes; the SPA document is served successfully and React renders the relevant screen.
+
 ## Paths and metadata
 
 The current build assumes deployment at `/`. A subdirectory deployment requires coordinated changes to Vite's `base`, React Router's basename, public asset references and the manifest's `id`, `scope`, `start_url` and icon paths.

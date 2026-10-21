@@ -36,7 +36,10 @@
 button[data-variant="gradient"],
 button[data-variant="gradient-secondary"] {
   background-image: var(--button-gradient);
+  background-origin: border-box;
   background-clip: border-box;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   border-color: transparent;
   cursor: pointer;
   @apply btn rounded-[9px] px-[18px] py-[15px] font-mono text-[11px] text-site-gradient-text shadow-[0_12px_30px_var(--site-shadow-button)] min-[581px]:max-[761px]:text-[10px] motion-reduce:translate-none motion-reduce:rotate-none;

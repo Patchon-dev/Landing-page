@@ -75,7 +75,7 @@ export default function Navbar({ theme, onToggleTheme }: NavbarProps) {
         to="/"
         onClick={closeMenu}
       >
-        daniel<span className="text-site-accent">.dev</span>
+        Daniel<span className="text-site-accent">{` {dev}`}</span>
       </Link>
     );
   }
