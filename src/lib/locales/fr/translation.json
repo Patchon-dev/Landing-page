@@ -187,5 +187,12 @@
   "dataView": "Vue des données",
   "switch": "Interrupteur",
   "switchIntro": "Activez ou désactivez une option avec le style de l’application.",
-  "switchLabel": "Recevoir des notifications"
+  "switchLabel": "Recevoir des notifications",
+  "error404Title": "Un peu hors des sentiers.",
+  "error404Description": "La page a peut-être été déplacée ou le lien est incorrect. Revenons en terrain connu.",
+  "error404Back": "Revenir en arrière",
+  "error500Status": "500 / Erreur interne du serveur",
+  "error500Title": "Une erreur est survenue.",
+  "error500Description": "Cette page n’a pas pu être chargée. Réessaie ou retourne à l’accueil.",
+  "error500Retry": "Réessayer"
 }

@@ -358,5 +358,12 @@
   "chartsDevelopment": "Development",
   "chartsDesign": "Design",
   "chartsSupport": "Support",
-  "chartsResearch": "Research"
+  "chartsResearch": "Research",
+  "error404Title": "A little off the map.",
+  "error404Description": "The page you’re looking for may have moved, or the link might be incorrect. Let’s get you somewhere familiar.",
+  "error404Back": "Go back",
+  "error500Status": "500 / Internal server error",
+  "error500Title": "Something went wrong.",
+  "error500Description": "We couldn’t load this page right now. Please try again, or return to the home page.",
+  "error500Retry": "Try again"
 }

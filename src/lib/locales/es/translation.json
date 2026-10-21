@@ -187,5 +187,12 @@
   "dataView": "Vista de datos",
   "switch": "Interruptor",
   "switchIntro": "Activa o desactiva una opción con el estilo de la aplicación.",
-  "switchLabel": "Recibir notificaciones"
+  "switchLabel": "Recibir notificaciones",
+  "error404Title": "Te has salido un poco del camino.",
+  "error404Description": "La página puede haber cambiado de dirección o el enlace es incorrecto. Volvamos a un lugar conocido.",
+  "error404Back": "Volver atrás",
+  "error500Status": "500 / Error interno del servidor",
+  "error500Title": "Algo ha salido mal.",
+  "error500Description": "No hemos podido cargar esta página. Inténtalo de nuevo o vuelve al inicio.",
+  "error500Retry": "Intentar de nuevo"
 }

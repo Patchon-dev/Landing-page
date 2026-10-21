@@ -1,3 +1,4 @@
+import InternalServerErrorPage from './pages/error/InternalServerErrorPage';
 import NotFoundPage from "./pages/error/NotFoundPage";
 import Index from "./pages/Index";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
@@ -30,6 +31,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<SiteLayout />}>
             <Route index element={<Index />} />
+            <Route path="500" element={<InternalServerErrorPage />} />
             <Route path="components" element={<ComponentsLayout />}>
               <Route index element={<Navigate to="button" replace />} />
               <Route path="button" element={<ButtonPage />} />
@@ -45,7 +47,6 @@ export default function App() {
               <Route path="charts" element={<Suspense fallback={<main className="min-h-[600px]" aria-busy="true" />}><ChartsPage /></Suspense>} />
               <Route path="data-view" element={<DataViewPage />} />
               <Route path="scheduler" element={<Suspense fallback={<main className="min-h-[600px]" aria-busy="true" />}><SchedulerPage /></Suspense>} />
-              <Route path="*" element={<NotFoundPage />} />
             </Route>
           <Route path="*" element={<NotFoundPage />} />
         </Route>

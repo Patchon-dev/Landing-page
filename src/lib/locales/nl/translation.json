@@ -187,5 +187,12 @@
   "dataView": "Gegevensweergave",
   "switch": "Schakelaar",
   "switchIntro": "Schakel een optie in of uit in de stijl van de toepassing.",
-  "switchLabel": "Meldingen ontvangen"
+  "switchLabel": "Meldingen ontvangen",
+  "error404Title": "Even van het pad geraakt.",
+  "error404Description": "De pagina is mogelijk verplaatst of de link klopt niet. Laten we teruggaan naar een vertrouwde plek.",
+  "error404Back": "Ga terug",
+  "error500Status": "500 / Interne serverfout",
+  "error500Title": "Er is iets misgegaan.",
+  "error500Description": "Deze pagina kon niet worden geladen. Probeer het opnieuw of ga terug naar de startpagina.",
+  "error500Retry": "Opnieuw proberen"
 }

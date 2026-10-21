@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/footer/Footer';
 import ToastHost from '../components/toast/ToastHost';
+import PageErrorBoundary from './PageErrorBoundary';
 
 export default function SiteLayout() {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
@@ -40,14 +41,16 @@ export default function SiteLayout() {
     <div className="min-h-screen">
       <div
         data-portfolio=""
-        className="overflow-clip bg-site-bg font-sans leading-[1.55] text-site-ink max-[581px]:rounded-[10px]"
+        className="flex min-h-dvh flex-col overflow-clip bg-site-bg font-sans leading-[1.55] text-site-ink max-[581px]:rounded-[10px]"
       >
         <Navbar
           theme={theme}
           onToggleTheme={() => setTheme((current) => (current === 'dark' ? 'light' : 'dark'))}
         />
-        <div ref={contentRef}>
-          <Outlet />
+        <div ref={contentRef} className="flex-1">
+          <PageErrorBoundary key={location.key}>
+            <Outlet />
+          </PageErrorBoundary>
         </div>
         <Footer />
       </div>

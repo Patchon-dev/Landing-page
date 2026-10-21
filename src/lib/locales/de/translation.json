@@ -187,5 +187,12 @@
   "dataView": "Datenansicht",
   "switch": "Schalter",
   "switchIntro": "Aktiviere oder deaktiviere eine Option im Stil der Anwendung.",
-  "switchLabel": "Benachrichtigungen erhalten"
+  "switchLabel": "Benachrichtigungen erhalten",
+  "error404Title": "Ein wenig vom Weg abgekommen.",
+  "error404Description": "Die gesuchte Seite wurde möglicherweise verschoben oder der Link ist falsch. Zurück zu vertrauten Seiten.",
+  "error404Back": "Zurück",
+  "error500Status": "500 / Interner Serverfehler",
+  "error500Title": "Etwas ist schiefgelaufen.",
+  "error500Description": "Diese Seite konnte gerade nicht geladen werden. Versuche es erneut oder gehe zur Startseite zurück.",
+  "error500Retry": "Erneut versuchen"
 }

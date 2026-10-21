@@ -187,5 +187,12 @@
   "dataView": "Vista dati",
   "switch": "Interruttore",
   "switchIntro": "Attiva o disattiva un’opzione con lo stile dell’applicazione.",
-  "switchLabel": "Ricevi notifiche"
+  "switchLabel": "Ricevi notifiche",
+  "error404Title": "Un po’ fuori strada.",
+  "error404Description": "La pagina potrebbe essere stata spostata o il link non è corretto. Torniamo in un luogo familiare.",
+  "error404Back": "Torna indietro",
+  "error500Status": "500 / Errore interno del server",
+  "error500Title": "Qualcosa è andato storto.",
+  "error500Description": "Non è stato possibile caricare questa pagina. Riprova o torna alla pagina iniziale.",
+  "error500Retry": "Riprova"
 }
