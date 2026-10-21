@@ -17,12 +17,12 @@ export default function DatePickerPage() {
   const [size, setSize] = useState<"sm" | "md" | "lg">("md");
   const [disabled, setDisabled] = useState(false);
   const [includeTime, setIncludeTime] = useState(false);
-  const [dateTime, setDateTime] = useState("");
+  const [dateTime, setDateTime] = useState("1999-06-20T00:00");
   const [values, setValues] = useState<Record<PickerMode, string>>({
     year: "",
     month: "",
     week: "",
-    day: "",
+    day: "1999-06-20",
     time: "",
   });
   const label = t(`picker${mode[0].toUpperCase()}${mode.slice(1)}`);
@@ -33,7 +33,7 @@ export default function DatePickerPage() {
     date.toLocaleDateString(i18n.resolvedLanguage ?? "en", {
       dateStyle: "medium",
     });
-  const example = `const [value, setValue] = useState('');
+  const example = `const [value, setValue] = useState(${JSON.stringify(value)});
 
 <DatePicker
   label="${label}"

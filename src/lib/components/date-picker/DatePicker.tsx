@@ -70,8 +70,8 @@ export default function DatePicker({ id, name, label, mode = 'day', value, onCha
   const format = (date: Dayjs, options: Intl.DateTimeFormatOptions) => date.toDate().toLocaleDateString(locale, options);
   const displayValue = !selected ? '' : mode === 'year' || mode === 'time' ? value
     : mode === 'week' ? `${t('pickerWeek')} ${Number(value.slice(-2))} · ${value.slice(0, 4)}`
-      : withTime ? selected.toDate().toLocaleString(locale, { dateStyle: 'short', timeStyle: 'short' })
-        : format(selected, mode === 'month' ? { month: 'long', year: 'numeric' } : { day: '2-digit', month: '2-digit', year: 'numeric' });
+      : mode === 'day' ? selected.format(withTime ? 'DD/MM/YYYY HH:mm' : 'DD/MM/YYYY')
+        : format(selected, { month: 'long', year: 'numeric' });
   const minimum = min ? parsePickerValue(min, mode, withTime) : null;
   const maximum = max ? parsePickerValue(max, mode, withTime) : null;
   const inBounds = (date: Dayjs, calendarCell = false) => {
@@ -228,8 +228,9 @@ export default function DatePicker({ id, name, label, mode = 'day', value, onCha
         </Popover.Anchor>
         <Portal target={portalTarget}>
           <Popover.Positioner className="period-picker-positioner">
-            <Popover.Content className="period-picker-panel" data-mode={mode} aria-label={label}>
-              {mode !== 'time' && <>
+            <Popover.Content className="period-picker-panel" data-mode={mode} data-with-time={withTime} aria-label={label}>
+              <div className="period-picker-body">
+              {mode !== 'time' && <div className="period-picker-calendar">
                 <header className="period-picker-header">
                   <button type="button" onClick={() => shift(-1)} disabled={previousDisabled} aria-label={t('pickerPrevious')}>‹</button>
                   <button type="button" className="period-picker-heading" disabled={view === 'year'} onClick={() => setView(view === 'day' ? 'month' : 'year')} aria-live="polite">{heading}</button>
@@ -254,8 +255,9 @@ export default function DatePicker({ id, name, label, mode = 'day', value, onCha
                     </div>
                   ))}
                 </div>
-              </>}
+              </div>}
               {hasTime && open && <TimeFields ref={timeFields} id={`${inputId}-time`} value={draftTime} onChange={setDraftTime} isAllowed={allowedTime} />}
+              </div>
               {hasTime && draft && !inBounds(draft) && <p className="period-picker-hint" role="status">{t('pickerInvalid')}</p>}
               <footer className="period-picker-footer">
                 <button type="button" disabled={!value} onClick={() => { onChange(''); setOpen(false); }}>{t('pickerClear')}</button>

@@ -23,6 +23,11 @@
 .period-picker-positioner { z-index: 70; }
 .period-picker-panel { box-sizing: border-box; width: 300px; max-width: calc(100vw - 24px); max-height: var(--available-height, 460px); overflow: auto; border: 1px solid var(--site-border); border-radius: 12px; background: transparent; backdrop-filter: blur(12px); padding: 14px; color: var(--site-ink); box-shadow: 0 12px 30px var(--site-shadow-soft); font-family: inherit; }
 .period-picker-panel[data-mode='time'] { width: 100%; }
+.period-picker-panel[data-with-time='true'] { width: 480px; }
+.period-picker-panel[data-with-time='true'] .period-picker-body { display: grid; grid-template-columns: minmax(0, 1fr) 160px; gap: 14px; }
+.period-picker-calendar { min-width: 0; }
+.period-picker-panel[data-with-time='true'] .period-picker-time-columns { align-content: start; margin-top: 0; border-top: 0; padding-top: 0; border-left: 1px solid var(--site-border); padding-left: 14px; }
+.period-picker-panel[data-with-time='true'] .period-picker-time-list { max-height: 260px; }
 .period-picker-header { display: grid; grid-template-columns: 32px 1fr 32px; align-items: center; gap: 6px; margin-bottom: 12px; }
 .period-picker-header button { min-height: 32px; border-radius: 6px; cursor: pointer; }
 .period-picker-header > button:not(.period-picker-heading) { font-size: 23px; line-height: 1; }

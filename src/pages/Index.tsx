@@ -388,13 +388,13 @@ export default function Index() {
               </p>
               <div className="flex flex-wrap gap-1.5">
                 <span className="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">
-                  SvelteKit
+                  Svelte 5
                 </span>
                 <span className="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">
-                  Rails
+                  TypeScript
                 </span>
                 <span className="rounded-[5px] border border-site-border px-2 py-1 text-[10px] text-site-muted">
-                  Google Maps
+                  REST APIs
                 </span>
               </div>
             </div>
@@ -505,8 +505,16 @@ export default function Index() {
         </div>
         <div className="grid grid-cols-[.7fr_1fr_1.4fr] items-start gap-[22px] border-t border-site-border py-[25px] max-[581px]:grid-cols-1 max-[581px]:gap-2">
           <span className="text-xs text-site-muted">{t("workExperience")}</span>
-          <strong className="text-sm font-medium">{t("fullStackRole")}</strong>
+          <div>
+            <strong className="text-sm font-medium">{t("fullStackRole")}</strong>
+            <p className="mt-2 text-xs text-site-muted">{t("careerCompany")}</p>
+          </div>
           <p className="m-0 text-[13px] text-site-muted">{t("careerIntro")}</p>
+        </div>
+        <div className="grid grid-cols-[.7fr_1fr_1.4fr] items-start gap-[22px] border-t border-site-border py-[25px] max-[581px]:grid-cols-1 max-[581px]:gap-2">
+          <span className="text-xs text-site-muted">{t("internshipLabel")}</span>
+          <strong className="text-sm font-medium">{t("internshipCompany")}</strong>
+          <p className="m-0 text-[13px] text-site-muted">{t("internshipIntro")}</p>
         </div>
         <div className="grid grid-cols-[.7fr_1fr_1.4fr] items-start gap-[22px] border-t border-site-border py-[25px] max-[581px]:grid-cols-1 max-[581px]:gap-2">
           <span className="text-xs text-site-muted">{t("education")}</span>
