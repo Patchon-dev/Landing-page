@@ -16,7 +16,7 @@ const initialUsers: DemoUser[] = [
   { id: 'user-2', name: 'Ana Costa', email: 'ana.costa@example.com', role: 'member', team: 'design', status: 'active' },
   { id: 'user-3', name: 'Miguel Santos', email: 'miguel.santos@example.com', role: 'viewer', team: 'marketing', status: 'invited' },
   { id: 'user-4', name: 'Inês Matos', email: 'ines.matos@example.com', role: 'member', team: 'support', status: 'active' },
-  { id: 'user-carolina-veiga', name: 'Carolina Veiga', email: 'carolina.veiga@example.com', role: 'member', team: 'design', status: 'active' },
+  { id: 'user-carolina-matos', name: 'Carolina Matos', email: 'carolina.matos@example.com', role: 'member', team: 'design', status: 'active' },
   { id: 'user-5', name: 'Sofia Ribeiro', email: 'sofia.ribeiro@example.com', role: 'admin', team: 'design', status: 'active' },
   { id: 'user-6', name: 'Tiago Ferreira', email: 'tiago.ferreira@example.com', role: 'member', team: 'development', status: 'inactive' },
   { id: 'user-7', name: 'Beatriz Almeida', email: 'beatriz.almeida@example.com', role: 'viewer', team: 'support', status: 'active' },
