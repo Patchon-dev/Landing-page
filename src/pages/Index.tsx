@@ -149,7 +149,7 @@ export default function Index() {
               to="/#projetos"
             >
               {t("exploreWork")}
-              <span>↗</span>
+              <span>↗&#xFE0E;</span>
             </Button>
             <Button
               data-library=""
@@ -194,7 +194,7 @@ export default function Index() {
                 <b className="size-[5px] rounded-full bg-site-muted opacity-50" />
                 <span className="ml-3 font-mono">{t("playground")}</span>
               </div>
-              <div className="p-[22px] min-[581px]:max-[761px]:p-[14px] max-[581px]:p-[18px]">
+              <div className="@container p-[22px] min-[581px]:max-[761px]:p-[14px] max-[581px]:p-[18px]">
                 <div className="mb-4 flex items-center justify-between gap-2 text-[11px] text-site-muted">
                   <strong className="font-medium text-site-ink">
                     {t("applicationSlogan")}
@@ -203,12 +203,12 @@ export default function Index() {
                     href="https://www.linkedin.com/in/danieltlopes97/"
                     target="_blank"
                   >
-                    ↗
+                    ↗&#xFE0E;
                   </a>
                 </div>
-                <div className="grid grid-cols-2 gap-3 max-[400px]:grid-cols-1 min-[581px]:max-[761px]:grid-cols-1 min-[581px]:max-[761px]:gap-1.5">
-                  <div className="col-span-2 min-w-0 rounded-[9px] border border-site-border bg-site-bg px-3 py-4 min-[581px]:max-[761px]:px-[7px] min-[581px]:max-[761px]:py-3">
-                    <div className="mb-3 flex items-center gap-2 text-[11px]">
+                <div className="grid grid-cols-1 gap-3 @min-[292px]:grid-cols-2 min-[581px]:max-[761px]:gap-1.5">
+                  <div className="col-span-full min-w-0 rounded-[9px] border border-site-border bg-site-bg px-3 py-4 min-[581px]:max-[761px]:px-[7px] min-[581px]:max-[761px]:py-3">
+                    <div className="mb-3 flex flex-wrap items-center gap-2 text-[11px]">
                       <span className="shrink-0 rounded-full bg-site-fill p-1 flex items-center justify-center text-[11px] font-semibold text-site-on">
                         <img
                           className="max-w-[60px] object-cover rounded-full"
@@ -221,7 +221,7 @@ export default function Index() {
                           alt="Daniel Lopes"
                         />
                       </span>
-                      <span className="min-w-0">
+                      <span className="min-w-0 flex-1 basis-[110px] [overflow-wrap:anywhere]">
                         Daniel Lopes
                         <small className="block text-[10px] text-site-muted">
                           {t("frontendRole")}
@@ -262,10 +262,10 @@ export default function Index() {
                     </div>
                   </div>
                   <div className="min-w-0 rounded-[9px] border border-site-border bg-site-bg px-3 py-4 min-[581px]:max-[761px]:px-[7px] min-[581px]:max-[761px]:py-3">
-                    <label className="flex items-center gap-2 text-[11px] whitespace-nowrap">
+                    <label className="flex items-center gap-2 text-[11px]">
                       <input
                         type="checkbox"
-                        className="size-4 accent-site-fill"
+                        className="size-4 shrink-0 accent-site-fill"
                         checked={creativeLoading}
                         onChange={(e) => setCreativeLoading(e.target.checked)}
                       />
@@ -349,16 +349,13 @@ export default function Index() {
           >
             <div className="flex h-[190px] items-center justify-center bg-linear-135 from-site-soft to-site-glow p-6">
               <div className="flex h-[140px] w-full overflow-hidden rounded-lg border border-site-border bg-site-panel shadow-[0_18px_30px_var(--site-shadow-button)] [transform:perspective(800px)_rotateX(8deg)_rotateY(-7deg)_rotateZ(-2deg)] motion-safe:transition-transform motion-safe:duration-350 motion-safe:group-hover:[transform:perspective(800px)_rotateX(0deg)_rotateY(0deg)_rotateZ(0deg)] motion-reduce:transform-none">
-                <div className="w-1/4 shrink-0 border-r border-site-border p-3 text-[9px] leading-[2.5] text-site-muted">
-                  {t("workspace")}
-                  <br />
-                  {t("overview")}
-                  <br />
-                  {t("calendar")}
-                  <br />
-                  {t("team")}
+                <div className="flex w-1/4 min-w-[76px] shrink-0 flex-col gap-2 border-r border-site-border px-2 py-3 text-[9px] leading-tight text-site-muted [overflow-wrap:anywhere]">
+                  <span>{t("workspace")}</span>
+                  <span>{t("overview")}</span>
+                  <span>{t("calendar")}</span>
+                  <span>{t("team")}</span>
                 </div>
-                <div className="min-w-0 flex-1 p-4">
+                <div className="min-w-0 flex-1 p-4 max-[761px]:p-3">
                   <span className="text-[11px]">{t("installSchedule")}</span>
                   <div className="my-[9px] h-[7px] rounded-[3px] w-[65%] bg-site-fill" />
                   <div className="mt-3 grid grid-cols-5 gap-[3px]">
@@ -405,16 +402,13 @@ export default function Index() {
           >
             <div className="flex h-[190px] items-center justify-center bg-linear-135 from-site-soft to-site-glow p-6 from-site-ink-blue to-site-soft">
               <div className="flex h-[140px] w-full overflow-hidden rounded-lg border border-site-border bg-site-panel shadow-[0_18px_30px_var(--site-shadow-button)] [transform:perspective(800px)_rotateX(8deg)_rotateY(-7deg)_rotateZ(-2deg)] motion-safe:transition-transform motion-safe:duration-350 motion-safe:group-hover:[transform:perspective(800px)_rotateX(0deg)_rotateY(0deg)_rotateZ(0deg)] motion-reduce:transform-none">
-                <div className="w-1/4 shrink-0 border-r border-site-border p-3 text-[9px] leading-[2.5] text-site-muted">
-                  {t("componentPreview")}
-                  <br />
-                  {t("button")}
-                  <br />
-                  {t("input")}
-                  <br />
-                  {t("card")}
+                <div className="flex w-1/4 min-w-[76px] shrink-0 flex-col gap-2 border-r border-site-border px-2 py-3 text-[9px] leading-tight text-site-muted [overflow-wrap:anywhere]">
+                  <span>{t("componentPreview")}</span>
+                  <span>{t("button")}</span>
+                  <span>{t("input")}</span>
+                  <span>{t("card")}</span>
                 </div>
-                <div className="min-w-0 flex-1 p-4">
+                <div className="min-w-0 flex-1 p-4 max-[761px]:p-3">
                   <span className="text-[11px]">{t("buildGood")}</span>
                   <div className="my-[9px] h-[7px] rounded-[3px] bg-site-border w-3/4" />
                   <div className="flex flex-wrap gap-1.5 mt-5">

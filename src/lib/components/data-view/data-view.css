@@ -51,7 +51,7 @@
 .data-view-empty p { margin-top: 7px; color: var(--site-muted); font-size: 12px; }
 .data-view-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; border-top: 1px solid var(--site-border); padding: 14px 20px; }
 .data-view-footer p { margin: 0; color: var(--site-muted); font-size: 11px; }
-.data-view-pagination { display: flex; align-items: center; gap: 4px; }
+.data-view-pagination { display: flex; flex-wrap: wrap; align-items: center; max-width: 100%; gap: 4px; }
 .data-view-pagination button { min-width: 32px; min-height: 32px; border: 1px solid var(--site-border); border-radius: 6px; padding: 4px 7px; font-size: 11px; cursor: pointer; }
 .data-view-pagination button:first-child, .data-view-pagination button:last-child { font-size: 20px; line-height: 1; }
 .data-view-pagination button[aria-current='page'] { background: var(--site-selection); border-color: var(--site-accent); color: var(--site-accent); }
@@ -65,6 +65,7 @@
   .data-view-search { flex-basis: 100%; }
   .data-view-filter { flex: 1 1 100px; }
   .data-view-cards { padding: 14px; }
+  .data-view-table .data-view-actions-cell { position: static; box-shadow: none; }
 }
 @media (max-width: 767px), (hover: none) and (pointer: coarse) {
   .data-view-switch button, .data-view-action, .data-view-pagination button { min-width: 44px; min-height: 44px; }

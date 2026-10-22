@@ -1,10 +1,19 @@
 /* Shared layout for component catalogue headings and demo controls. */
 .component-heading {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
   margin-bottom: 15px;
+}
+.component-heading h1 { min-width: 0; overflow-wrap: anywhere; }
+/* Reference tables share the available width with long API names and types. */
+[data-components-layout] main > table,
+[data-components-layout] main > .overflow-x-auto > table {
+  table-layout: fixed;
+  & :is(th, td) { overflow-wrap: anywhere; }
+  & code { white-space: normal; overflow-wrap: anywhere; box-decoration-break: clone; }
 }
 .component-controls {
   container: demo-controls / inline-size;
@@ -20,7 +29,7 @@
 }
 .component-control {
   display: grid;
-  grid-template-rows: 20px 40px;
+  grid-template-rows: minmax(20px, auto) minmax(40px, auto);
   gap: 8px;
   flex: 0 1 140px;
   width: 140px;
@@ -54,7 +63,7 @@
   color: var(--site-ink);
   font-size: 12px;
 }
-.component-control-body { display: flex; align-items: center; gap: 12px; min-width: 0; height: 40px; }
+.component-control-body { display: flex; align-items: center; gap: 12px; min-width: 0; min-height: 40px; }
 .component-control-input.component-native-select {
   appearance: auto;
   background: transparent;

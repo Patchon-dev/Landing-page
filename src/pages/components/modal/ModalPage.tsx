@@ -157,7 +157,7 @@ function ProfileFields() {
                 setOpen(true);
               }}
             >
-              {t("modalOpen")} <span aria-hidden="true">↗</span>
+              {t("modalOpen")} <span aria-hidden="true">↗&#xFE0E;</span>
             </button>
           }
         </div>
