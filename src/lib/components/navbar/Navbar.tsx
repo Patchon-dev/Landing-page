@@ -100,7 +100,7 @@ export default function Navbar({ theme, onToggleTheme }: NavbarProps) {
         onClick={closeMenu}
       >
         {t(link.label)}
-        {link.label === "components" && <span aria-hidden="true"> ↗</span>}
+        {link.label === "components" && <span aria-hidden="true"> ↗&#xFE0E;</span>}
       </Link>
     ));
   }

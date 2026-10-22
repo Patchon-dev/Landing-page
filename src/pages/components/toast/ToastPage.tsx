@@ -164,7 +164,7 @@ export default function ToastPage() {
               <div className="mb-6 flex items-center justify-between gap-3 px-5 font-mono text-[10px] text-site-muted">
                 <span>{t("toastTypes")}</span>
                 <span className="flex items-center gap-2">
-                  <span aria-hidden="true">↗</span>
+                  <span aria-hidden="true">↗&#xFE0E;</span>
                   {t(positions[placement])}
                 </span>
               </div>
@@ -199,7 +199,7 @@ export default function ToastPage() {
                       }
                     />
                     <span aria-hidden="true" className="px-1 text-lg">
-                      ↗
+                      ↗&#xFE0E;
                     </span>
                   </button>
                 ))}
@@ -294,7 +294,7 @@ export default function ToastPage() {
               onClick={() => showToast(variant)}
               className="inline-flex items-center gap-2 rounded-lg bg-site-fill px-4 py-2 text-xs font-medium text-site-on motion-safe:transition-transform motion-safe:hover:-translate-y-0.5"
             >
-              {t("showToast")} <span aria-hidden="true">↗</span>
+              {t("showToast")} <span aria-hidden="true">↗&#xFE0E;</span>
             </button>
             <button
               type="button"
